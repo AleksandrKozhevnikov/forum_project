@@ -1,0 +1,21 @@
+.table {
+    width: 389px;
+    background: #dadeed;
+    font-size: 13px;
+    border-spacing: 0;
+    text-align: center;
+    &__header {
+        cursor: pointer;
+        th {
+            padding: 4px;
+            border: 1px solid #d1d2d6;
+        }
+    }
+    &__body {
+        td {
+            background: #ffffff;
+            padding: 4px;
+            border: 1px solid #d1d2d6;
+        }
+    }
+}

@@ -1,0 +1,35 @@
+html {
+    font-family: Carlito, sans-serif;
+}
+body {
+    margin: 0;
+}
+
+
+
+// import base
+
+@import "../base/variables";
+@import "../base/buttons";
+@import "../base/dividers";
+@import "../base/container";
+@import "../base/table-small";
+@import "../base/sliders";
+@import "../base/headers";
+
+// import libs
+
+@import "../libs/fonts";
+
+// import blocks
+@import "../blocks/header";
+@import "../blocks/promo";
+@import "../blocks/pickup";
+@import "../blocks/lease";
+@import "../blocks/partners";
+@import "../blocks/footer";
+@import "../blocks/about";
+@import "../blocks/rent";
+@import "../blocks/buy";
+@import "../blocks/sale";
+@import "../blocks/buildings_pages";

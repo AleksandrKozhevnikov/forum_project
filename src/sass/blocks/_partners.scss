@@ -1,0 +1,47 @@
+.partners {
+    min-height: 342px;
+    &__wrapper {
+        margin-top: 30px;
+        margin-bottom: 30px;
+        display: flex;
+        justify-content: space-around;
+    }
+    &__frame {
+        min-height: 197px;
+        width: 26%;
+        padding: 20px;
+        border: 1px solid #1749BA;
+        border-radius: 20px; 
+    }
+    &__image {
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+        margin-top: 12px;
+        margin-bottom: 10px;
+        &_ptd {
+            margin-top: 40px;
+        }
+    }
+    &__title {
+        text-align: center;
+        color: #1749BA;
+        font-style: italic;
+        font-weight: 600;
+        font-size: 19px;
+        line-height: 16px;
+        &_2 {
+            margin-top: 5px;
+        }
+    }
+    &__link {
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+        text-decoration: underline;
+        margin-top: 5px;
+        color: #2b5dce;
+        font-style: italic;
+        transition: 0.3s;
+    }
+}

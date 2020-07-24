@@ -1,0 +1,197 @@
+.buy {
+    min-height: 600px;
+    padding-top: 30px;
+    &__content {
+        margin-left: 30px;
+        display: flex;
+    }
+    &__left__block {
+        display: flex;
+        flex-direction: column;
+    }
+    &__middle__block {
+        display: flex;
+        flex-direction: column;
+    }
+    &__right__block {
+        display: flex;
+        flex-direction: column;
+    }
+    &__top__wrapper {
+        display: flex;
+        flex-direction: row;
+    }
+    &__middle__wrapper {
+        display: flex;
+        flex-direction: row;
+    }
+    &__down__wrapper {
+        display: flex;
+        flex-direction: row;
+    }
+}
+.left {
+    &__first_item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 315px;
+        height: 90px;
+        background: #2e5080;
+        &__text {
+            margin: 0 15px;
+            font-size: 30px;
+            color: #ffffff;
+            font-family: segoeprb, sans-serif;
+            text-transform: uppercase;
+            text-align: center;
+        }
+        &__pin {
+            background: url(/img/icons/pin.png) no-repeat center;
+            background-size: 100%;
+            width: 20px;
+            height: 20px;
+        }
+    }
+    &__second_item {
+        width: 315px;
+        height: 410px;
+        margin-top: 10px;
+        background: url(/img/buy/lahta.png) no-repeat center;
+    }
+}
+.right {
+    &__first_item {
+        margin-left: -50px;
+        width: 200px;
+        height: 310px;
+        background: url(/img/buy/right-block-item1.png) no-repeat center;
+        cursor: pointer;
+        &__pin {
+            padding-top: 5px;
+            display: block;
+            margin: 0 auto;
+            background: url(/img/icons/pin.png) no-repeat center;
+            background-size: 100%;
+            width: 20px;
+            height: 20px;
+        }
+        &__text {
+            padding-left: 10px;
+            text-align: left;
+            font-family: segoeprb ;
+            font-size: 10px;
+            color:#ffffff;
+            line-height: 1.6;
+        }
+    }
+    &__second_item {
+        margin-left: 10px;
+        margin-top: 10px;
+        width: 140px;
+        height: 130px;
+        background: url(/img/buy/right-block-item2.png) no-repeat center;
+    }
+    &__third_item {
+        margin-left: 10px;
+        margin-top: 10px;
+        width: 140px;
+        height: 50px;
+        background: url(/img/buy/right-block-item3.png) no-repeat center;
+    }
+}
+.top {
+    &__first_item {
+        margin-left: 10px;
+        width: 120px;
+        height: 150px;
+        background: url(/img/buy/middle-row1-item1.png) no-repeat center;
+    }
+    &__second_item {
+        margin-left: 10px;
+        width: 320px;
+        height: 150px;
+        background: #ec884c;
+        cursor: pointer;
+        &__pin {
+            padding-top: 5px;
+            display: block;
+            margin: 0 auto;
+            background: url(/img/icons/pin.png) no-repeat center;
+            background-size: 100%;
+            width: 20px;
+            height: 20px;
+        }
+        &__text {
+            text-align: center;
+            font-family: segoeprb ;
+            font-size: 10px;
+            color:#ffffff;
+            line-height: 1.5;
+        }
+    }
+}
+.middle {
+    &__first_item {
+        margin-top: 10px;
+        margin-left: 10px;
+        width: 120px;
+        height: 150px;
+        background: url(/img/buy/middle-block-row2-item1.png) no-repeat center;
+    }
+    &__second_item {
+        margin-top: 10px;
+        margin-left: 10px;
+        width: 50px;
+        height: 150px;
+        background: url(/img/buy/middle-block-row2-item2.png) no-repeat center;
+    }
+    &__third_item {
+        width: 160px;
+        height: 150px;
+        margin-top: 10px;
+        margin-left: 10px;
+        background: url(/img/buy/middle-block-row2-item3.png) no-repeat center;
+    }
+    &__fourth_item {
+        width: 90px;
+        height: 150px;
+        margin-top: 10px;
+        margin-left: 10px;
+        background: url(/img/buy/middle-block-row2-item2.png) no-repeat center;
+    }
+}
+.down {
+    &__first_item {
+        margin-top: 10px;
+        margin-left: 10px;
+        width: 180px;
+        height: 190px;
+        background: url(/img/buy/middle-block-row3-item1.png) no-repeat center;
+        cursor: pointer;
+        &__pin {
+            padding-top: 5px;
+            display: block;
+            margin: 0 auto;
+            background: url(/img/icons/pin.png) no-repeat center;
+            background-size: 100%;
+            width: 20px;
+            height: 20px;
+        }
+        &__text {
+            padding: 1px;
+            text-align: center;
+            font-family: segoeprb ;
+            font-size: 9.5px;
+            color:#ffffff;
+            line-height: 1.5;
+        }
+    }
+    &__second_item {
+        margin-top: 10px;
+        margin-left: 10px;
+        width: 320px;
+        height: 190px;
+        background: url(/img/buy/middle-block-row3-item2.png) no-repeat center;
+    }
+}

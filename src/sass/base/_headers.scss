@@ -1,0 +1,20 @@
+.buildings {
+    &__header {
+        width: 100%;
+        height: auto;
+        padding: 5px 0;
+        background: linear-gradient(to top, #a3c5f8, #87b4f9);
+        border-top: 1px solid #1749ba;
+        border-bottom: 1px solid #1749ba;
+    }
+    &__title {
+        margin: 0;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        text-align: center;
+        font-family: Arial, sans-serif;
+        font-weight: 600;
+        font-size: 30px;
+        text-shadow: 0 0 7px #4C4C4C;
+    }
+}

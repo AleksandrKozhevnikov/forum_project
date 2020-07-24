@@ -1,0 +1,88 @@
+.header__button_mobile {
+    .btn-menu {
+        width: 30px;
+        height: 30px;
+        border: 2px solid $white;
+        position: absolute;
+        border-radius: 5px;
+        right: 8px;
+        top: 8px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+      
+        span {
+          width: 20px;
+          height: 2px;
+          background-color: $white;
+          position: relative;
+      
+          &::before {
+            content: "";
+            position: absolute;
+            width: 18px;
+            border: 1px solid $white;
+            margin-top: 5px;
+            transition: all 0.3s;
+          }
+      
+          &::after {
+            content: "";
+            position: absolute;
+            width: 18px;
+            border: 1px solid $white;
+            margin-top: -5px;
+            transition: all 0.3s;
+          }
+        }
+      }
+}
+.header__button_mobile-active {
+    span {
+        height: 0;
+        margin-top: -2px;
+    
+        &::before {
+          transform: rotate(45deg);
+          top: -5px;
+        }
+    
+        &::after {
+          transform: rotate(-45deg);
+          top: 5px;
+        }
+      }
+}
+.button__filter {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 17px;
+}
+.button__orange {
+  cursor: pointer;
+  color: $white;
+  background: $btn-search;
+  border: none;
+  padding: 5px;
+  width: 100%;
+  font-size: 12px;
+  margin-top: 10px;
+  transition: 0.3s;
+  &:hover {
+    box-shadow: 0 0 5px black;
+  }
+  &_filter {
+    width: 80px !important;
+    &_center {
+      display: block;
+      margin: 0 auto;
+      text-align: center;
+      margin-top: 40px;
+      width: 80px
+    }
+  }
+  &_left {
+    margin-top: 4px;
+  }
+}

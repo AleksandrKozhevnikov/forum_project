@@ -1,0 +1,589 @@
+.kvarc {
+    min-height: 2500px;
+    &__promo__wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__floors {
+        margin-top: 17px;
+    }
+    &__more {
+        margin-top: 30px;
+        display: flex;
+        flex-direction: column;
+        :hover {
+            color:#808080;
+        }
+        a {
+            font-family: liberation-reg;
+            color: #133d9b;
+            transition: 0.3s;
+            margin: 5px 0;
+            font-weight: 600;
+            
+        }
+    }
+}
+
+.promo__text {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    font-family: liberation-reg;
+    color: #133d9b;
+    &__header {
+        margin: 0;
+        text-align: left;
+        font-size: 41px;
+        font-weight: 300;
+        text-transform: uppercase;
+    }
+    &__adress {
+        font-size: 17px;
+    }
+    &__metro {
+        font-size: 16px;
+        padding-top: 33px;
+    }
+    &__area {
+        position: absolute;
+        bottom: 5px;
+    }
+}
+
+.kvarc__stock {
+    background: url(/img/actions-back.png) no-repeat;
+    background-size: auto;
+    height: 190px;
+    display: flex;
+    align-items: center;
+    margin-top: 42px;
+    &__content {
+        width: 983px;
+        height: auto;
+        background: #FFFFFF;
+        margin: 0 auto;
+        display: flex;
+        box-shadow: 4px 4px 5px #4C4C4C;
+    }
+    &__title {
+        width: 30%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 25px 0;
+        &__text {
+            font-family: liberation;
+            color: #133d9b;
+            font-size: 50pt;
+            text-align: center;
+            text-transform: uppercase;
+        }
+    }
+    &__descr {
+        width: 70%;
+        background-color: #1749ba;
+        &__text {
+            padding-top: 42px;
+            color: #ffffff;
+            font-size: 30px;
+            text-align: center;
+        }
+    }
+}
+.floors {
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__title {
+        font-family: liberation-reg;
+        color: #133d9b;
+        font-size: 24px;
+    }
+    &__header {
+        font-family: liberation-reg;
+        color: #133d9b;
+        font-size: 18px;
+    }
+    &__choice__kvarc {
+        margin-top: 67px;
+        a {
+            :hover {
+                background: #6e8cd2;
+                color: #FFFFFF;
+            }
+            text-decoration: none;
+        }
+        ul {
+            padding: 0;
+            margin: 0;
+            list-style-type: none;
+        }
+        
+    }
+    &__building__kvarc {
+        margin-left: 7px;
+        margin-top: 4px;
+        img {
+            width: 723px;
+            height: 336px;
+        }
+    }
+}
+.choice {
+    &__floor__kvarc {
+        font-family: liberation-reg;
+        border: 1px solid #133d9b;
+        padding: 5px;
+        width: 88px;
+        height: 16px;
+        text-align: center;
+        margin: 10px 0;
+        margin-right: 45px;
+        box-shadow: 2px 2px 5px -2px #1749ba;
+        cursor: pointer;
+        transition: 0.3s;
+        color: #4C4C4C;
+    }
+}
+
+.about {
+    &__text {
+        color: #133d9b;
+        font-size: 19px;
+        &__wrapper {
+            padding: 15px;
+            padding-bottom: 10px;
+        }
+    }
+    &__advantages {
+        color: #133d9b;
+        font-size: 19px;
+        ul {
+            padding-left: 12px;
+            margin-top: 12px;
+            list-style-type: none;
+        }
+    }
+}
+.travel {
+    &__image__wrapper {
+        display: flex;
+        justify-content: space-around;
+        :hover {
+            cursor: pointer;
+        }
+    }
+    &__name {
+        display: block;
+        margin: 0 auto;
+        margin-bottom: 10px;
+        text-align: center;
+        width: 70%;
+        font-size: 18px;
+        line-height: 17px;
+        &__wrapper {
+            margin-top: 10px;
+            display: flex;
+            justify-content: space-around;
+        }
+    }
+    &__map {
+        &__active {
+            display: block;
+            margin: 0 auto;
+            margin-top: 20px;
+            width: 986px;
+            height: 400px;
+        }
+    }
+}
+
+// forum page
+
+.forum {
+    min-height: 2600px;
+    &__promo__wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__floors {
+        margin-top: 17px;
+    }
+    &__more {
+        margin-top: 30px;
+        display: flex;
+        flex-direction: column;
+        :hover {
+            color:#808080;
+        }
+        a {
+            font-family: liberation-reg;
+            color: #133d9b;
+            transition: 0.3s;
+            margin: 5px 0;
+            font-weight: 600;
+            
+        }
+    }
+}
+
+.promo__text {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    font-family: liberation-reg;
+    color: #133d9b;
+    &__header_forum {
+        margin: 0;
+        text-align: left;
+        font-size: 40px;
+        font-weight: 300;
+        text-transform: uppercase;
+    }
+    &__adress {
+        font-size: 17px;
+    }
+    &__metro {
+        font-size: 16px;
+        padding-top: 33px;
+    }
+    &__area {
+        position: absolute;
+        bottom: 5px;
+    }
+}
+
+.forum__stock {
+    background: url(/img/actions-back.png) no-repeat;
+    background-size: auto;
+    height: 190px;
+    display: flex;
+    align-items: center;
+    margin-top: 42px;
+    &__content {
+        width: 983px;
+        height: auto;
+        background: #FFFFFF;
+        margin: 0 auto;
+        display: flex;
+        box-shadow: 4px 4px 5px #4C4C4C;
+    }
+    &__title {
+        width: 30%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 25px 0;
+        &__text {
+            font-family: liberation;
+            color: #133d9b;
+            font-size: 50pt;
+            text-align: center;
+            text-transform: uppercase;
+        }
+    }
+    &__descr {
+        width: 70%;
+        background-color: #1749ba;
+        &__text {
+            padding-top: 42px;
+            color: #ffffff;
+            font-size: 30px;
+            text-align: center;
+        }
+    }
+}
+.floors {
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__title {
+        font-family: liberation-reg;
+        color: #133d9b;
+        font-size: 24px;
+    }
+    &__header {
+        font-family: liberation-reg;
+        color: #133d9b;
+        font-size: 18px;
+    }
+    &__choice__forum {
+        margin-top: 67px;
+        a {
+            :hover {
+                background: #6e8cd2;
+                color: #FFFFFF;
+            }
+            text-decoration: none;
+        }
+        ul {
+            padding: 0;
+            margin: 0;
+            list-style-type: none;
+        }
+        
+    }
+    &__building {
+        margin-left: 7px;
+        margin-top: 4px;
+        img {
+            width: 723px;
+            height: 336px;
+        }
+    }
+    &__forum {
+        img {
+            height: 507px;
+        }
+    }
+}
+
+.choice {
+    &__floor__forum {
+        font-family: liberation-reg;
+        border: 1px solid #133d9b;
+        padding: 5px;
+        width: 88px;
+        height: 16px;
+        text-align: center;
+        margin: 10px 0;
+        margin-right: 45px;
+        box-shadow: 2px 2px 5px -2px #1749ba;
+        cursor: pointer;
+        transition: 0.3s;
+        color: #4C4C4C;
+    }
+}
+
+.about {
+    &__text {
+        color: #133d9b;
+        font-size: 19px;
+        &__wrapper {
+            padding: 15px;
+            padding-bottom: 10px;
+        }
+    }
+    &__advantages {
+        color: #133d9b;
+        font-size: 19px;
+        ul {
+            padding-left: 12px;
+            margin-top: 12px;
+            list-style-type: none;
+        }
+    }
+}
+.map {
+    &__forum__active {
+        margin-top: 20px;
+        width: 100%;
+        height: 400px;
+        margin-bottom: 30px;
+    }
+    &__forum {
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+        margin-top: 35px;
+        cursor: pointer;
+    }
+}
+
+// page atoll
+
+.atoll {
+    min-height: 2600px;
+    &__promo__wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__floors {
+        margin-top: 17px;
+    }
+    &__more {
+        margin-top: 30px;
+        display: flex;
+        flex-direction: column;
+        :hover {
+            color:#808080;
+        }
+        a {
+            font-family: liberation-reg;
+            color: #133d9b;
+            transition: 0.3s;
+            margin: 5px 0;
+            font-weight: 600;
+            
+        }
+    }
+}
+
+.promo__text {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    font-family: liberation-reg;
+    color: #133d9b;
+    &__header {
+        margin: 0;
+        text-align: left;
+        font-size: 41px;
+        font-weight: 300;
+        text-transform: uppercase;
+    }
+    &__adress {
+        font-size: 17px;
+    }
+    &__metro {
+        font-size: 16px;
+        padding-top: 33px;
+    }
+    &__area {
+        position: absolute;
+        bottom: 5px;
+    }
+}
+
+.atoll__stock {
+    background: url(/img/actions-back.png) no-repeat;
+    background-size: auto;
+    height: 190px;
+    display: flex;
+    align-items: center;
+    margin-top: 42px;
+    &__content {
+        width: 983px;
+        height: auto;
+        background: #FFFFFF;
+        margin: 0 auto;
+        display: flex;
+        box-shadow: 4px 4px 5px #4C4C4C;
+    }
+    &__title {
+        width: 30%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 25px 0;
+        &__text {
+            font-family: liberation;
+            color: #133d9b;
+            font-size: 50pt;
+            text-align: center;
+            text-transform: uppercase;
+        }
+    }
+    &__descr {
+        width: 70%;
+        background-color: #1749ba;
+        &__text {
+            padding-top: 42px;
+            color: #ffffff;
+            font-size: 30px;
+            text-align: center;
+        }
+    }
+}
+.floors {
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__title {
+        font-family: liberation-reg;
+        color: #133d9b;
+        font-size: 24px;
+    }
+    &__header {
+        font-family: liberation-reg;
+        color: #133d9b;
+        font-size: 18px;
+    }
+    &__choice__atoll {
+        margin-top: 67px;
+        a {
+            :hover {
+                background: #6e8cd2;
+                color: #FFFFFF;
+            }
+            text-decoration: none;
+        }
+        ul {
+            padding: 0;
+            margin: 0;
+            list-style-type: none;
+        }
+        
+    }
+    &__building {
+        margin-left: 7px;
+        margin-top: 4px;
+        img {
+            width: 723px;
+            height: 336px;
+        }
+    }
+}
+.for_atoll {
+    img {
+        height: 461px;
+    }
+}
+.choice {
+    &__floor__atoll {
+        font-family: liberation-reg;
+        border: 1px solid #133d9b;
+        padding: 5px;
+        width: 88px;
+        height: 16px;
+        text-align: center;
+        margin: 10px 0;
+        margin-right: 45px;
+        box-shadow: 2px 2px 5px -2px #1749ba;
+        cursor: pointer;
+        transition: 0.3s;
+        color: #4C4C4C;
+    }
+}
+
+.about {
+    &__text {
+        color: #133d9b;
+        font-size: 19px;
+        &__wrapper {
+            padding: 15px;
+            padding-bottom: 10px;
+        }
+    }
+    &__advantages {
+        color: #133d9b;
+        font-size: 19px;
+        ul {
+            padding-left: 12px;
+            margin-top: 12px;
+            list-style-type: none;
+        }
+    }
+}
+.map {
+    &__atoll__active {
+        margin-top: 20px;
+        width: 100%;
+        height: 400px;
+        margin-bottom: 30px;
+    }
+    &__atoll {
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+        margin-top: 35px;
+        cursor: pointer;
+    }
+}

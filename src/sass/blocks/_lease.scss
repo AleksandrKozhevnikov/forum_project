@@ -1,0 +1,42 @@
+.lease {
+    min-height: 191px;
+    padding-bottom: 18px;
+    &__wrapper {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 20px;
+        margin-bottom: 29px;
+    }
+    &__number {
+        a {
+            text-decoration: none;
+            font-size: 17px;
+            font-family: Arial, sans-serif;
+            color: $blue;
+            font-weight: 600;
+        }
+        &_center {
+            padding-left: 39px;
+        }
+    }
+    &__email {
+        a {
+            text-decoration: none;
+            font-size: 17px;
+            font-family: Arial, sans-serif;
+            color: $blue;
+            font-weight: 600;
+        }
+    }
+    &__subtitle {
+        text-align: center;
+        color: $blue;
+        font-weight: 600;
+        font-size: 19px;
+        margin-bottom: 2px;
+    }
+    &__adresses {
+        text-align: center;
+        color: $blue;
+    }
+}
