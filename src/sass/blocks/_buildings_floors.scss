@@ -145,3 +145,116 @@
         }
     }
 }
+.choice {
+    &__forum__wrapper {
+        margin-top: 10px;
+        a {
+            :hover {
+                background: #6e8cd2;
+                color: #FFFFFF;
+            }
+            text-decoration: none;
+        }
+        ul {
+            display: flex;
+            justify-content: space-between;
+            padding: 0;
+            margin: 0;
+            list-style-type: none;
+        }
+        &__storage {
+            margin-top: 10px;
+            a {
+                :hover {
+                    background: #6e8cd2;
+                    color: #FFFFFF;
+                }
+                text-decoration: none;
+            }
+            ul {
+                padding: 0;
+                margin: 0;
+                list-style-type: none;
+            }
+            li {
+                margin-right: 80px;
+            }
+        }
+    }
+    &__level__forum {
+        display: inline-block;
+        font-family: liberation-reg;
+        border: 1px solid #133d9b;
+        padding: 5px;
+        width: 88px;
+        height: 16px;
+        text-align: center;
+        margin: 10px 0;
+        box-shadow: 2px 2px 5px -2px #1749ba;
+        cursor: pointer;
+        transition: 0.3s;
+        color: #4C4C4C;
+    }
+}
+.levels__forum {
+    img {
+        height: 516px;
+    }
+}
+.choice {
+    &__atoll__wrapper {
+        margin-top: 10px;
+        a {
+            :hover {
+                background: #6e8cd2;
+                color: #FFFFFF;
+            }
+            text-decoration: none;
+        }
+        ul {
+            display: flex;
+            justify-content: space-between;
+            padding: 0;
+            margin: 0;
+            list-style-type: none;
+        }
+        &__storage {
+            margin-top: 10px;
+            a {
+                :hover {
+                    background: #6e8cd2;
+                    color: #FFFFFF;
+                }
+                text-decoration: none;
+            }
+            ul {
+                padding: 0;
+                margin: 0;
+                list-style-type: none;
+            }
+            li {
+                margin-right: 80px;
+            }
+        }
+    }
+    &__level__atoll {
+        display: inline-block;
+        font-family: liberation-reg;
+        border: 1px solid #133d9b;
+        padding: 5px;
+        width: 88px;
+        height: 16px;
+        text-align: center;
+        margin: 10px 0;
+        box-shadow: 2px 2px 5px -2px #1749ba;
+        cursor: pointer;
+        transition: 0.3s;
+        color: #4C4C4C;
+    }
+}
+.levels {
+    &__atoll
+    img {
+        height: 460px;
+    }
+}

@@ -54,3 +54,23 @@ $(document).ready(function(){
 
 
 // END all sliders
+
+// Fixed header
+
+var hdr = document.querySelector('.header'),
+hdrHight = hdr.scrollHeight,
+menuHeight =  document.querySelector('.menu').scrollHeight + hdrHight;
+
+$(function($) {
+    $(window).scroll(function(){
+        if($(this).scrollTop()>hdrHight){
+            $('.menu').css('position', 'fixed');
+            $('.menu').css('top', '0');
+            $(hdr).css('height', menuHeight);
+        }
+        else if ($(this).scrollTop()<hdrHight){
+           $('.menu').css('position', 'relative');
+           $(hdr).css('height', hdrHight);
+        }
+    });
+});
