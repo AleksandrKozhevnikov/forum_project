@@ -1,0 +1,147 @@
+.levels {
+    min-height: 1200px;
+    &__wrapper {
+        display: flex;
+        justify-content: space-around;
+        :hover {
+            color: #133d9b;
+        }
+    }
+    &__text {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        padding-right: 43px;
+        font-family: liberation-reg;
+        color: #133d9b;
+        &__header {
+            margin: 0;
+            text-align: left;
+            font-size: 41px;
+            font-weight: 300;
+            text-transform: uppercase;
+        }
+        &__adress {
+            font-size: 18px;
+        }
+        &__metro {
+            font-size: 16px;
+            padding-top: 33px;
+        }
+        &__link {
+            font-family: liberation;
+            font-weight: 600;
+            text-decoration: underline;
+            margin-top: 30px;
+            color: #d1d2d6;
+            transition: 0.3s;
+        }
+    }
+    &__image {
+        margin-top: 35px;
+        img {
+            width: 725px;
+            height: 341px;
+        }
+    }
+    &__select {
+        margin-top: 30px;
+        font-family: liberation;
+        color: #1749ba;
+    }
+    &__header {
+        margin-top: 10px;
+        font-family: liberation;
+        color: #1749ba;
+    }
+}
+.choice {
+    &__kvarc__wrapper {
+        margin-top: 10px;
+        a {
+            :hover {
+                background: #6e8cd2;
+                color: #FFFFFF;
+            }
+            text-decoration: none;
+        }
+        ul {
+            display: flex;
+            justify-content: space-between;
+            padding: 0;
+            margin: 0;
+            list-style-type: none;
+        }
+        &__storage {
+            margin-top: 10px;
+            a {
+                :hover {
+                    background: #6e8cd2;
+                    color: #FFFFFF;
+                }
+                text-decoration: none;
+            }
+            ul {
+                padding: 0;
+                margin: 0;
+                list-style-type: none;
+            }
+            li {
+                margin-right: 80px;
+            }
+        }
+    }
+    &__level__kvarc {
+        display: inline-block;
+        font-family: liberation-reg;
+        border: 1px solid #133d9b;
+        padding: 5px;
+        width: 88px;
+        height: 16px;
+        text-align: center;
+        margin: 10px 0;
+        box-shadow: 2px 2px 5px -2px #1749ba;
+        cursor: pointer;
+        transition: 0.3s;
+        color: #4C4C4C;
+    }
+}
+.room {
+    &__wrapper {
+        display: flex;
+        justify-content: center;
+        margin-top: 30px;
+        color: #ffffff;
+        font-size: 18px;
+        
+    }
+    &__free {
+        background: #bfdcb0;
+        padding: 5px 15px;
+        margin: 0 35.5px;
+    }
+    &__busy {
+        background: #808080;
+        padding: 5px 15px;
+        margin: 0 35.5px;
+    }
+}
+.scheme {
+    &__links {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin-top: 60px;
+        :hover {
+            color:#d1d2d6;
+        }
+        a {
+            color: #808080;
+            text-decoration: underline;
+            margin: 3px;
+            font-family: liberation-reg;
+            transition: 0.3s;
+            cursor: pointer;
+        }
+    }
+}
