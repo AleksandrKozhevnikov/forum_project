@@ -78,7 +78,7 @@
                         </div>
                         <div class="card__content">
                             <div class="content__rent-area">
-                                <div>Площадь (м&sup2;)</div>
+                                <div class="content__header">Площадь (м&sup2;)</div>
                                 <div class="content__input">
                                     <input type="text" placeholder="от" class="minArea">
                                     <input type="text" placeholder="до" class="maxArea">
@@ -87,7 +87,7 @@
                             </div>
 
                             <div class="content__rent-pay">
-                                <div>Арендная плата в <br> месяц (руб)</div>
+                                <div class="content__header">Арендная плата в <br> месяц (руб)</div>
                                 <div class="content__input">
                                     <input type="text" placeholder="от" class="minPay">
                                     <input type="text" placeholder="до" class="maxPay">
@@ -95,7 +95,7 @@
                                 <div class="filter-main filter-circle__rent-pay"></div>
         
                                 <div class="button__filter">
-                                    <button id="sendFormButton" class="button__orange button__orange_filter">Найти</button>
+                                    <button id="sendFormButton" class="button__orange button__orange_filter_right">Найти</button>
                                 </div>
                             </div>
                         </div>
@@ -396,6 +396,37 @@
                     </div>
                 </div>
             </div>
+            
+            <div class="mobile__about">
+                <div class="mobile__first__card">
+                    <div class="mobile__first__card__content">
+                        Компания <b>"Форум"</b> многопрофильный холдинг, ведущий свою деятельность на Северо-Западе РФ с 1988года.
+                    </div>
+                </div>
+                <div class="mobile__second__card"></div>
+                <div class="mobile__third__card">
+                    <div class="mobile__third__card__content">
+                        Основная область интересов - коммерческая недвижимость и сельское хозяйство.
+                    </div>
+                </div>
+                <div class="mobile__fourth__card">
+                    <div class="mobile__fourth__card__content">
+                        <ul>
+                            <li>Офисные центры:</li>
+                            <li>— <b>ДЦ Кварц</b> (Пискаревский пр., д. 63, лит. А)</li>
+                            <li>— <b>БЦ Атолл</b> (ул. Учительская, д. 23, лит. А)</li>
+                            <li>— <b>БЦ Форум</b>(ул. Балтийская, д. 51)</li>
+                            <li>Офисно-складской комплекс:</li>
+                            <li>— <b>«Перун»</b> (Пискаревский пр., д. 63, лит. В)</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="mobile__fifth__card">
+                    <div class="mobile__fifth__card__content">
+                        Основной актив - команда единомышленников, многие из которых работают в компании более 20 лет.
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -416,7 +447,7 @@
                             <div class="filter-main filter-circle__rent-area"></div>
                         </div>
     
-                        <div class="choise__rent-pay">
+                        <div class="choice__rent-pay">
                             <div class="choice__subheader">Арендная плата в <br> месяц (руб)</div>
                             <div class="choice__input">
                                 <input type="text" placeholder="от" class="minPay">
@@ -1486,6 +1517,7 @@
     crossorigin="anonymous">
     </script>
     <script src="js/slick.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
     <script src="js/main.js"></script>
 
 </body>

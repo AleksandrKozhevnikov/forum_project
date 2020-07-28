@@ -1,0 +1,111 @@
+@media (max-width: 320px) {
+    .header {
+        min-height: 150px;
+        &__wrapper {
+            display: flex;
+            flex-direction: column;
+        }
+        &__logo {
+            img {
+                width: 50%;
+            }
+        }
+    }
+    .menu {
+        &__wrapper {
+            span {
+                display: none;
+            }
+        }
+        &__link {
+            display: none;   
+        }
+    }
+    .pickup {
+        &__map {
+            display: none;
+        }
+        &__map__active {
+            display: none;
+        }
+        &__buildings {
+            width: 100%;
+        }
+    }
+    .partners {
+        &__wrapper {
+            display: flex;
+            flex-direction: column;
+        }
+        &__frame {
+            width: 80%;
+        }
+    }
+    .footer {
+        &__wrapper {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+    .about {
+        &__content {
+            display: none;
+        }
+    }
+    .mobile {
+        &__about {
+            display: flex;
+        }
+    }
+    .rent {
+        &__wrapper {
+            display: flex;
+            flex-direction: column;
+        }
+        &__choice {
+            width: 320px;
+            &__wrapper {
+                display: flex;
+                flex-direction: column;
+            }
+        }
+        &__map {
+            width: 320px;
+            margin-left: 0;
+        }
+    }
+    .kvarc {
+        &__header {
+            width: 320px;
+        }
+        &__slider {
+            width: 320px;
+            margin-left: 0;
+        }
+    }
+    .forum {
+        &__header {
+            width: 320px;
+        }
+        &__slider {
+            width: 320px;
+            margin-left: 0;
+        }
+    }
+    .atoll {
+        &__header {
+            width: 320px;
+        }
+        &__slider {
+            width: 320px;
+            margin-left: 0;
+        }
+    }
+    .slick-next {
+        transform: translate(270px,-213px);
+    }
+    .table {
+        width: 320px;
+    }
+    
+}

@@ -16,6 +16,8 @@ body {
 @import "../base/table-small";
 @import "../base/sliders";
 @import "../base/headers";
+@import "../base/hamburger";
+
 
 // import libs
 
@@ -34,3 +36,7 @@ body {
 @import "../blocks/sale";
 @import "../blocks/buildings_pages";
 @import "../blocks/buildings_floors";
+
+// import media 
+
+@import "../base/media";
