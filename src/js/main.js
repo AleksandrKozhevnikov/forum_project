@@ -21,6 +21,22 @@ $(function($) {
 // END fixed header
 
 
+// Mobile menu
+button = document.querySelector('.button__mobile');
+wrapper = document.querySelector('.menu__mobile__wrapper')
+menu = document.querySelector('.menu__mobile')
+links = document.querySelector('.menu__link__mobile')
+
+button.addEventListener("click" ,() => {
+    button.classList.toggle('button__mobile__active');
+    wrapper.classList.toggle('menu__mobile__wrapper__active');
+    menu.classList.toggle('menu__mobile__active');
+    links.style.animationName = 'appearance';
+	links.style.animationDuration = '0.5s';
+})
+
+// END Mobile menu
+
 // all sliders
 
 $(document).ready(function(){

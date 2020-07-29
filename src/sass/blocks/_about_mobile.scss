@@ -1,0 +1,85 @@
+.mobile {
+    &__about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    display: none;
+    }
+    &__first__card {
+        margin-top: 10px;
+        width: 280px;
+        height: 54px;
+        background-color: #274684;
+        padding: 20px;
+        box-shadow: $shadow;
+        &__content {
+            padding: 0 15px;
+            color: #fff;
+            font-family: Carlito-Italic;
+            line-height: 17px;
+            font-size: 14px;
+        }
+    }
+    &__second__card {
+        margin-top: 10px;
+        width: 320px;
+        height: 200px;
+        background: url(/img/about/logo.png) no-repeat center;
+        background-color: #071739;
+        background-size: contain;
+        box-shadow: $shadow;
+    }
+    &__third__card {
+        margin-top: 10px;
+        width: 280px;
+        height: 54px;
+        background-color: #709fdc;
+        padding: 20px;
+        box-shadow: $shadow;
+        &__content {
+            padding: 0 15px;
+            color: #fff;
+            font-family: Carlito-Italic;
+            line-height: 17px;
+            font-size: 14px;
+        }
+    }
+    &__fourth__card {
+        margin-top: 10px;
+        width: 280px;
+        height: 192px;
+        padding: 20px;
+        box-shadow: $shadow;
+        background-color: #274684;
+        &__content {
+            padding: 0 15px;
+            color: #fff;
+            font-family: Carlito-Italic;
+            line-height: 17px;
+            font-size: 14px;
+            ul {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+            }
+            li {
+                margin-bottom: 7px;
+            }
+        }
+    }
+    &__fifth__card {
+        margin-top: 10px;
+        width: 280px;
+        height: 54px;
+        background-color: #071739;
+        padding: 20px;
+        box-shadow: $shadow;
+        &__content {
+            padding: 0 15px;
+            color: #fff;
+            font-family: Carlito-Italic;
+            line-height: 17px;
+            font-size: 14px;
+        }
+    }
+}

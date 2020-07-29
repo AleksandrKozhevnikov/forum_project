@@ -1,0 +1,81 @@
+.buy {
+    &__mobile {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        &__pin {
+            background: url(/img/icons/pin.png) no-repeat center;
+            background-size: 100%;
+            width: 20px;
+            height: 20px;
+        }
+        &__first {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 5px;
+            width: 320px;
+            height: 90px;
+            background: #2e5080;
+            &__text {
+                text-transform: uppercase;
+                margin: 0 15px;
+                font-size: 30px;
+                color: #ffffff;
+                font-family: segoeprb, sans-serif;
+            }
+        }
+        &__second {
+            margin-top: 10px;
+            padding: 5px;
+            width: 320px;
+            height: 146px;
+            background: #ec884c;
+            &__text {
+                text-align: center;
+                font-size: 10px;
+                line-height: 1.5;
+                font-family: segoepr, sans-serif;
+                color: white;
+            }
+            &__pin_noflex {
+                display: block;
+                margin: 0 auto;
+                background: url(/img/icons/pin.png) no-repeat center;
+                background-size: 100%;
+                width: 20px;
+                height: 20px;
+            }
+        }
+        &__third {
+            margin-top: 10px;
+            padding: 5px;
+            width: 320px;
+            height: 90px;
+            background: url(/img/buy/middle-block-row3-item1.png) no-repeat center;
+            background-size: 120% auto;
+            &__text {
+                text-align: center;
+                font-size: 10px;
+                line-height: 14px;
+                font-family: segoepr, sans-serif;
+                color: white;
+            }
+        }
+        &__fourth {
+            margin-top: 10px;
+            padding: 10px;
+            width: 310px;
+            height: 185px;
+            background: url(/img/buy/right-block-item1.png) no-repeat center;
+            background-size: 120% auto;
+            &__text {
+                text-align: left;
+                font-size: 10px;
+                line-height: 1.5;
+                font-family: segoepr, sans-serif;
+                color: white;
+            }
+        }
+    }
+}

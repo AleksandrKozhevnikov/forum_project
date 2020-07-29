@@ -1,0 +1,49 @@
+.button {
+    &__mobile {
+        width: 30px;
+        height: 30px;
+        border: 2px solid #FFFFFF;
+        position: absolute;
+        border-radius: 5px;
+        right: 8px;
+        top: 8px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        span {
+            width: 20px;
+            height: 2px;
+            background-color: #FFFFFF;
+            position: relative;
+        }
+    }
+}
+.button__mobile span::before {
+    content: "";
+    position: absolute;
+    width: 18px;
+    border: 1px solid #FFFFFF;
+    margin-top: 5px;
+    transition: all 0.3s;
+}
+.button__mobile span::after {
+content: "";
+    position: absolute;
+    width: 18px;
+    border: 1px solid #FFFFFF;
+    margin-top: -5px;
+    transition: all 0.3s;
+}
+.button__mobile__active span {
+    height: 0;
+    margin-top: -2px;
+}
+.button__mobile__active span::before {
+    transform: rotate(45deg);
+    top: -5px;
+}
+.button__mobile__active span::after {
+    transform: rotate(-45deg);
+    top: 5px;
+}
