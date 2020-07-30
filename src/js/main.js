@@ -88,6 +88,14 @@ $(document).ready(function(){
         prevArrow: '<button type="button" class="slick-prev"><img src="img/icons/arrov-left.png"></button>',
         nextArrow: '<button type="button" class="slick-next_promo"><img src="img/icons/arrov-right.png"></button>'
     });
+    $('.room__slider').slick({
+        adaptiveHeight: true,
+        autoplay: true,
+        autoplaySpeed: 5000,
+        speed: 1500,
+        prevArrow: '<button type="button" class="slick-prev_room"><img src="img/icons/arrov-left.png"></button>',
+        nextArrow: '<button type="button" class="slick-next_room"><img src="img/icons/arrov-right.png"></button>'
+    });
   });
 
 

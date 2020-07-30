@@ -18,3 +18,16 @@
         text-shadow: 0 0 7px #4C4C4C;
     }
 }
+.free  {
+    &__rooms__header {
+        font-family: liberation;
+        color: #1749ba;
+        text-align: center;
+        font-size: 25px;
+        margin-bottom: 10px;
+        h1 {
+            margin: 0;
+        }
+    }
+}
+  

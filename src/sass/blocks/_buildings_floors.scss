@@ -253,7 +253,9 @@
     }
 }
 .levels {
-    &__atoll
+    &__atoll {
+        padding-bottom: 40px;
+    }
     img {
         height: 460px;
     }

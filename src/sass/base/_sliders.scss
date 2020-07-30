@@ -60,7 +60,20 @@
         }
     }
 }
-.slick-prev, .slick-next, .slick-next_promo {
+.room {
+  &__slider {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 10px;
+    position: relative;
+    width: 480px;
+    img {
+        height: 351px;
+    }
+}
+}
+.slick-prev, .slick-next, .slick-next_promo, .slick-prev_room, .slick-next_room {
     position: absolute;
     transform: translate(12px,140px);
     z-index: 1;
@@ -80,10 +93,19 @@
     }
     
 }
+
+.slick-prev {
+    &_room {
+		transform: translate(-440px,136px);
+	}
+}
 .slick-next {
     transform: translate(573px,-213px);
     &_promo {
         transform: translate(688px,-213px);
+    }
+    &_room {
+        transform: translate(409px,-213px);
     }
 }
 
