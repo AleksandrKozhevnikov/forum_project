@@ -502,6 +502,27 @@
             }
         }
     }
+    .promo {
+        &__text {
+            color: #0f317c;
+            text-align: center;
+            &__header {
+                text-align: center;
+                &_forum {
+                    text-align: center;
+                }
+            }
+            &__adress {
+                font-size: 18px;
+                margin-top: 7px;
+            }
+            &__area {
+                margin-top: 25px;
+                position: relative;
+                text-align: center;
+            }
+        }
+    }
     .kvarc {
         &__promo__wrapper {
             display: flex;
@@ -510,19 +531,30 @@
         &__page__slider {
             width: 320px;
             margin-left: 0;
+            margin: 0 auto;
+            margin-top: 8px;
+            img {
+                height: 195px;
+            }
         }
         &__stock {
-            background: #fff;
+            background: none;
             &__content {
             width: 320px;
             display: block;
-            margin: 0;
+            margin: 0 auto;
+            }
+            &__content {
+                width: 280px;
             }
             &__title {
                 padding-top: 10px;
                 padding-bottom: 10px;
                 width: 100%;
                 margin: 0;
+                &__text {
+                    font-size: 57px;
+                }
             }
             &__descr {
                 width: 100%;
@@ -535,7 +567,26 @@
             }
             
         }
-          
+        &__more {
+            margin-left: 45px;
+        }
+        &__about__block {
+            padding-top: 20px;
+            width: 80%;
+            display: block;
+            margin: 0 auto;
+        }
+        &__travel__block {
+            width: 80%;
+            display: block;
+            margin: 0 auto;
+        }
+        &__travel__mobile {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin-top: 10px;
+        }
     }
     .forum {
         &__promo__wrapper {
@@ -545,19 +596,30 @@
         &__page__slider {
             width: 320px;
             margin-left: 0;
+            margin: 0 auto;
+            margin-top: 8px;
+            img {
+                height: 195px;
+            }
         }
         &__stock {
-            background: #fff;
+            background: none;
             &__content {
             width: 320px;
             display: block;
-            margin: 0;
+            margin: 0 auto;
+            }
+            &__content {
+                width: 280px;
             }
             &__title {
                 padding-top: 10px;
                 padding-bottom: 10px;
                 width: 100%;
                 margin: 0;
+                &__text {
+                    font-size: 57px;
+                }
             }
             &__descr {
                 width: 100%;
@@ -568,6 +630,26 @@
                     width: 100%;
                 }
             }
+        }
+        &__more {
+            margin-left: 45px;
+        }
+        &__about__block {
+            padding-top: 20px;
+            width: 80%;
+            display: block;
+            margin: 0 auto;
+        }
+        &__travel__block {
+            width: 80%;
+            display: block;
+            margin: 0 auto;
+        }
+        &__travel__mobile {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin-top: 10px;
         }
     }
     .atoll {
@@ -578,19 +660,30 @@
         &__page__slider {
             width: 320px;
             margin-left: 0;
+            margin: 0 auto;
+            margin-top: 8px;
+            img {
+                height: 195px;
+            }
         }
         &__stock {
-            background: #fff;
+            background: none;
             &__content {
             width: 320px;
             display: block;
-            margin: 0;
+            margin: 0 auto;
+            }
+            &__content {
+                width: 280px;
             }
             &__title {
                 padding-top: 10px;
                 padding-bottom: 10px;
                 width: 100%;
                 margin: 0;
+                &__text {
+                    font-size: 57px;
+                }
             }
             &__descr {
                 width: 100%;
@@ -601,11 +694,38 @@
                     width: 100%;
                 }
             }
+            
+        }
+        &__more {
+            margin-left: 45px;
+        }
+        &__about__block {
+            padding-top: 20px;
+            width: 80%;
+            display: block;
+            margin: 0 auto;
+        }
+        &__travel__block {
+            width: 80%;
+            display: block;
+            margin: 0 auto;
+        }
+        &__travel__mobile {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin-top: 10px;
         }
     }
     .floors {
         &__wrapper {
             flex-direction: column;
+            ul {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                margin-top: 10px;
+            }
         }
         &__building__kvarc {
             display: none;
@@ -613,41 +733,151 @@
         &__building__forum {
             display: none;
         }
+        &__title {
+            margin-left: 43px;
+            margin-top: 50px;
+        }
+        &__header {
+            br {
+                display: none;
+            }
+            margin-left: 44px;
+        }
+        &__choice__kvarc {
+            margin-top: 20px;
+        }
+        &__choice__atoll {
+            margin-top: 10px;
+        }
         
+    }
+    .choice {
+        &__floor__kvarc {
+            margin-right: 10px;
+        }
+        &__floor__forum {
+            margin-right: 10px;
+        }
+        &__floor__atoll {
+            margin-right: 10px;
+        }
+        &__kvarc__wrapper {
+            ul {
+                display: flex;
+                justify-content: center;
+                flex-wrap: wrap;
+                margin-top: 10px;
+            }
+            &__storage {
+                display: flex;
+                justify-content: center;
+                flex-wrap: wrap;
+                margin-top: 10px;
+                margin-left: 44px;
+                li {
+                    margin-right: 10px;
+                }
+            }
+        }
+        &__level__kvarc {
+            margin-right: 10px;
+            
+        }
+        &__level__forum {
+            margin-right: 10px;
+        }
+        &__level__atoll {
+            margin-right: 10px;
+        }
+        &__forum__wrapper {
+            ul {
+                display: flex;
+                justify-content: center;
+                flex-wrap: wrap;
+                margin-top: 10px;
+            }
+            &__storage {
+                display: flex;
+                justify-content: center;
+                flex-wrap: wrap;
+                margin-top: 10px;
+                margin-left: 44px;
+                li {
+                    margin-right: 10px;
+                }
+            }
+        }
+        &__atoll__wrapper {
+            ul {
+                display: flex;
+                justify-content: center;
+                flex-wrap: wrap;
+                margin-top: 10px;
+            }
+        }
     }
     .for_atoll {
         display: none;
     }
     .slick-next_promo {
-        transform: translate(270px,-213px);
+        img {
+            height: 50px;
+        }
+        transform: translate(270px,-127px);
+    }
+    .slick-prev {
+        img {
+            height: 50px;
+        }
+        height: 50px;
+        transform: translate(0px,72px);
     }
     .travel {
         &__name {
-            text-align: left;
-            margin: 0;
             &__wrapper {
-                flex-direction: column;
+                display: none;
             }
         }
            
-        &__image__wrapper {
-            flex-wrap: wrap;
-            flex-direction: column;
+        &__image {
+            &__wrapper {
+                display: none;
+            }
         }
+        &__name {
+            font-size: 15px;
+            line-height: 12px;
+            width: 100%;
+        }
+        &__map {
+            img {
+                display: block;
+                margin: 0 auto;
+                text-align: center;
+                width: 115px;
+                padding-bottom: 20px;
+            }
+        }
+            
         &__map__active {
-            width: 320px;
-            margin: 0;
+            width: 285px;
+            margin: 0 auto;
         }
     }
     .map {
         &__forum {
+            margin-bottom: 30px;
             img {
-                width: 320px;
+                width: 333px;
+            }
+            &__active {
+                width: 333px;
+                margin: 0 auto;
             }
         }
         &__atoll {
             img {
-                width: 320px;
+                width: 333px;
             }
         }
     }
@@ -655,25 +885,11 @@
         &__image {
             display: none;
         }
-    }
-    .choice {
-        &__kvarc__wrapper {
-            ul {
-                display: flex;
-                flex-direction: column;
-            }
+        &__select {
+            margin-left: 43px;
         }
-        &__forum__wrapper {
-            ul {
-                display: flex;
-                flex-direction: column;
-            }
+        &__header {
+            margin-left: 43px;
         }
-        &__atoll__wrapper {
-            ul {
-                display: flex;
-                flex-direction: column;
-            }
-        }
-    }
+    }   
 }
