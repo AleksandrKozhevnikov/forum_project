@@ -1,6 +1,6 @@
 @media (max-width: 420px) {
     .header {
-        min-height: 166px;
+        height: 150px;
         &__wrapper {
             display: flex;
             flex-direction: column;
@@ -193,6 +193,10 @@
                 flex-direction: column;
                 align-items: center;
             }
+            &__large {
+                display: block;
+                margin: 0 auto;
+            }
         }
         &__map {
             margin-top: 30px;
@@ -259,6 +263,7 @@
             height: 50px;
         }
         transform: translate(270px,-127px);
+
     }
     .slick-prev {
         img {
@@ -269,6 +274,15 @@
     }
     .table {
         width: 320px;
+        &__large {
+            width: 420px;
+            &__content {
+                display: block;
+                margin: 0 auto;
+                overflow: auto;
+                width: 320px;
+            }
+        }
     }
     .buy {
         &__content {
@@ -276,8 +290,10 @@
         }
         &__mobile {
             display: flex;
+            flex-direction: column;
+            align-items: center;
         }
-    }
+    } 
     .sale {
         &__content {
             display: flex;
@@ -891,5 +907,69 @@
         &__header {
             margin-left: 43px;
         }
-    }   
+        &__text {
+            padding-right: 0;
+            text-align: center;
+            &__header {
+                text-align: center;
+            }
+            &__metro {
+                padding-top: 20px
+            }
+            &__link {
+                margin-top: 24px;
+            }
+        }
+    }
+    .free {
+        &__rooms__header {
+            margin: 0 auto;
+            width: 80%;
+        }
+    }
+    .room {
+        &__slider {
+            width: 320px;
+            margin-bottom: 10px;
+            img {
+                width: inherit;
+            }
+        }
+        &__info {
+            flex-wrap: wrap;
+            &__block {
+                width: 25%;
+            }
+            &__header {
+                br {
+                    display: none;
+                }
+            }
+        }
+        &__header {
+            &__text {
+                flex-direction: column;
+                br {
+                    display: none;
+                }
+            }
+        }
+        &__contacts {
+            flex-direction: column;
+            height: 170px;
+        }
+        &__questions {
+            margin-bottom: 20px;
+        }
+    }
+    .slick-next {
+        &_room {
+            transform: translate(115px,-213px);
+        }
+    }
+    .slick-prev {
+        &_room {
+            transform: translate(-152px,136px);
+        }
+    }
 }

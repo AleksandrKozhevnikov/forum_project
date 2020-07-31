@@ -1,8 +1,6 @@
 .buy {
     &__mobile {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        display: none;
         &__pin {
             background: url(/img/icons/pin.png) no-repeat center;
             background-size: 100%;

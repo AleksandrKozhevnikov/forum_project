@@ -3,6 +3,7 @@
 var hdr = document.querySelector('.header'),
 hdrHight = hdr.scrollHeight,
 menuHeight =  document.querySelector('.menu').scrollHeight + hdrHight;
+menuHeight =  document.querySelector('.menu__mobile').scrollHeight + hdrHight;
 
 $(function($) {
     $(window).scroll(function(){
@@ -17,6 +18,22 @@ $(function($) {
         }
     });
 });
+
+$(function($) {
+    $(window).scroll(function(){
+        if($(this).scrollTop()>hdrHight){
+            $('.menu__mobile').css('position', 'fixed');
+            $('.menu__mobile').css('top', '0');
+            $(hdr).css('height', menuHeight);
+        }
+        else if ($(this).scrollTop()<hdrHight){
+           $('.menu__mobile').css('position', 'relative');
+           $(hdr).css('height', hdrHight);
+        }
+    });
+});
+
+
 
 // END fixed header
 
@@ -158,5 +175,32 @@ $("input.maxArea").change(function(){
     }
     $(".filter-circle__rent-area").slider("values",1,value2);
 });
+
+
+	$("input.minPay").change(function(){
+		var value1=$("input.minPay").val();
+		var value2=$("input.maxPay").val();
+
+	    if(parseInt(value1) > parseInt(value2)){
+			value1 = value2;
+			$("input.minPay").val(value1);
+		}
+		$(".filter-circle__rent-pay").slider("values",0,value1);
+	});
+
+
+	$("input.maxPay").change(function(){
+		var value1=$("input.minPay").val();
+		var value2=$("input.maxPay").val();
+
+		if (value2 > 1000) { value2 = 1000; $("input.maxPay").val(1000)}
+
+		if(parseInt(value1) > parseInt(value2)){
+			value2 = value1;
+			$("input.maxPay").val(value2);
+		}
+		$(".filter-circle__rent-pay").slider("values",1,value2);
+	});
+
 
 

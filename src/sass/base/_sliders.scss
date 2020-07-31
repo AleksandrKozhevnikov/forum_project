@@ -65,10 +65,12 @@
     display: block;
     margin: 0 auto;
     text-align: center;
-    margin-top: 10px;
+	margin-top: 10px;
+	margin-bottom: 100px;
     position: relative;
-    width: 480px;
+    width: 580px;
     img {
+		width: 580px;
         height: 351px;
     }
 }
@@ -186,5 +188,17 @@
 .filter-main {
   width: 89%;
   margin-top: 10px;
+  &__free {
+    width: 50%;
+    display: block;
+    margin: 0 auto;
+    margin-top: 24px;
+  }
+  &__choice {
+    width: 60%;
+    display: block;
+    margin: 0 auto;
+    margin-top: 21px;
+  }
 }
 /*****END стилизация фильтра *****/

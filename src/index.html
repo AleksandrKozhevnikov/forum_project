@@ -532,7 +532,7 @@
                                 <input type="text" placeholder="от" class="minArea">
                                 <input type="text" placeholder="до" class="maxArea">
                             </div>
-                            <div class="filter-main filter-circle__rent-area"></div>
+                            <div class="filter-main filter-circle__rent-area filter-main__choice"></div>
                         </div>
     
                         <div class="choice__rent-pay">
@@ -541,7 +541,7 @@
                                 <input type="text" placeholder="от" class="minPay">
                                 <input type="text" placeholder="до" class="maxPay">
                             </div>
-                            <div class="filter-main filter-circle__rent-pay"></div>
+                            <div class="filter-main filter-circle__rent-pay filter-main__choice"></div>
     
                             <button id="sendFormButton" class="button__orange button__orange_filter_center">Найти</button>
                         </div>
@@ -1684,7 +1684,7 @@
                             <input type="text" placeholder="от" class="minArea">
                             <input type="text" placeholder="до" class="maxArea">
                         </div>
-                        <div class="filter-main filter-circle__rent-area"></div>
+                        <div class="filter-main filter-circle__rent-area filter-main__free"></div>
                     </div>
 
                     <div class="choice__rent-pay">
@@ -1693,379 +1693,328 @@
                             <input type="text" placeholder="от" class="minPay">
                             <input type="text" placeholder="до" class="maxPay">
                         </div>
-                        <div class="filter-main filter-circle__rent-pay"></div>
+                        <div class="filter-main filter-circle__rent-pay filter-main__free"></div>
 
                         <button id="sendFormButton" class="button__orange button__orange_filter_center">Найти</button>
                     </div>
                 </div>
-                <table class="table table__large" id="tableKvarc">
-                    <thead>
-                        <tr class="table__header">
-                            <th>№ Помещения</th>
-                            <th>Назначение помещения</th>
-                            <th>Количество комнат</th>
-                            <th>Площадь м&sup2;</th>
-                            <th>Арендная ставка Руб/м&sup2; в месяц</th>
-                            <th>Арендная плата в месяц, руб.</th>
-                            <th>Примечание</th>
-                            <th>Этаж</th>
-                            <th>Бизнес центр</th>
-                        </tr>
-                    </thead>
-                    <tbody class="table__body">
-                        <tr>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                        </tr>
-                        <tr>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                        </tr>
-                        <tr>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                        </tr>
-                        <tr>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                        </tr>
-                        <tr>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                        </tr>
-                        <tr>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                        </tr>
-                        <tr>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                        </tr>
-                        <tr>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                        </tr>
-                        <tr>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                        </tr>
-                        <tr>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                        </tr>
-                        <tr>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                        </tr>
-                        <tr>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                        </tr>
-                        <tr>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                        </tr>
-                        <tr>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                        </tr>
-                        <tr>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                        </tr>
-                        <tr>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                        </tr>
-                        <tr>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                        </tr>
-                        <tr>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                        </tr>
-                        <tr>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                        </tr>
-                        <tr>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                        </tr>
-                        <tr>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                        </tr>
-                        <tr>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                        </tr>
-                        <tr>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                        </tr>
-                        <tr>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                        </tr>
-                        <tr>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                        </tr>
-                        <tr>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                        </tr>
-                        <tr>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                        </tr>
-                    </tbody>
-                </table>
+                <div class="table__large__content">
+                    <table class="table table__large" id="tableKvarc">
+                        <thead>
+                            <tr class="table__header">
+                                <th>№ Помещения</th>
+                                <th>Назначение помещения</th>
+                                <th>Количество комнат</th>
+                                <th>Площадь м&sup2;</th>
+                                <th>Арендная ставка Руб/м&sup2; в месяц</th>
+                                <th>Арендная плата в месяц, руб.</th>
+                                <th>Примечание</th>
+                                <th>Этаж</th>
+                                <th>Бизнес центр</th>
+                            </tr>
+                        </thead>
+                        <tbody class="table__body">
+                            <tr>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                            </tr>
+                            <tr>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                            </tr>
+                            <tr>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                            </tr>
+                            <tr>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                            </tr>
+                            <tr>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                            </tr>
+                            <tr>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                            </tr>
+                            <tr>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                            </tr>
+                            <tr>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                            </tr>
+                            <tr>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                            </tr>
+                            <tr>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                            </tr>
+                            <tr>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                            </tr>
+                            <tr>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                            </tr>
+                            <tr>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                            </tr>
+                            <tr>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                            </tr>
+                            <tr>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                            </tr>
+                            <tr>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                            </tr>
+                            <tr>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                            </tr>
+                            <tr>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                            </tr>
+                            <tr>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                            </tr>
+                            <tr>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                            </tr>
+                            <tr>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                            </tr>
+                            <tr>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                            </tr>
+                            <tr>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                            </tr>
+                            <tr>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                            </tr>
+                            <tr>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                            </tr>
+                            <tr>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                            </tr>
+                            <tr>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                
             </div>
         </section>
         <section class="free__rooms__forum">
@@ -2083,7 +2032,7 @@
                             <input type="text" placeholder="от" class="minArea">
                             <input type="text" placeholder="до" class="maxArea">
                         </div>
-                        <div class="filter-main filter-circle__rent-area"></div>
+                        <div class="filter-main filter-circle__rent-area filter-main__free"></div>
                     </div>
 
                     <div class="choice__rent-pay">
@@ -2092,379 +2041,328 @@
                             <input type="text" placeholder="от" class="minPay">
                             <input type="text" placeholder="до" class="maxPay">
                         </div>
-                        <div class="filter-main filter-circle__rent-pay"></div>
+                        <div class="filter-main filter-circle__rent-pay filter-main__free"></div>
 
                         <button id="sendFormButton" class="button__orange button__orange_filter_center">Найти</button>
                     </div>
                 </div>
-                <table class="table table__large" id="tableKvarc">
-                    <thead>
-                        <tr class="table__header">
-                            <th>№ Помещения</th>
-                            <th>Назначение помещения</th>
-                            <th>Количество комнат</th>
-                            <th>Площадь м&sup2;</th>
-                            <th>Арендная ставка Руб/м&sup2; в месяц</th>
-                            <th>Арендная плата в месяц, руб.</th>
-                            <th>Примечание</th>
-                            <th>Этаж</th>
-                            <th>Бизнес центр</th>
-                        </tr>
-                    </thead>
-                    <tbody class="table__body">
-                        <tr>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                        </tr>
-                        <tr>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                        </tr>
-                        <tr>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                        </tr>
-                        <tr>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                        </tr>
-                        <tr>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                        </tr>
-                        <tr>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                        </tr>
-                        <tr>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                        </tr>
-                        <tr>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                        </tr>
-                        <tr>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                        </tr>
-                        <tr>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                        </tr>
-                        <tr>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                        </tr>
-                        <tr>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                        </tr>
-                        <tr>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                        </tr>
-                        <tr>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                        </tr>
-                        <tr>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                        </tr>
-                        <tr>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                        </tr>
-                        <tr>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                        </tr>
-                        <tr>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                        </tr>
-                        <tr>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                        </tr>
-                        <tr>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                        </tr>
-                        <tr>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                        </tr>
-                        <tr>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                        </tr>
-                        <tr>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                        </tr>
-                        <tr>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                        </tr>
-                        <tr>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                        </tr>
-                        <tr>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                        </tr>
-                        <tr>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                        </tr>
-                    </tbody>
-                </table>
+                <div class="table__large__content">
+                    <table class="table table__large" id="tableKvarc">
+                        <thead>
+                            <tr class="table__header">
+                                <th>№ Помещения</th>
+                                <th>Назначение помещения</th>
+                                <th>Количество комнат</th>
+                                <th>Площадь м&sup2;</th>
+                                <th>Арендная ставка Руб/м&sup2; в месяц</th>
+                                <th>Арендная плата в месяц, руб.</th>
+                                <th>Примечание</th>
+                                <th>Этаж</th>
+                                <th>Бизнес центр</th>
+                            </tr>
+                        </thead>
+                        <tbody class="table__body">
+                            <tr>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                            </tr>
+                            <tr>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                            </tr>
+                            <tr>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                            </tr>
+                            <tr>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                            </tr>
+                            <tr>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                            </tr>
+                            <tr>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                            </tr>
+                            <tr>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                            </tr>
+                            <tr>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                            </tr>
+                            <tr>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                            </tr>
+                            <tr>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                            </tr>
+                            <tr>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                            </tr>
+                            <tr>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                            </tr>
+                            <tr>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                            </tr>
+                            <tr>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                            </tr>
+                            <tr>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                            </tr>
+                            <tr>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                            </tr>
+                            <tr>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                            </tr>
+                            <tr>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                            </tr>
+                            <tr>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                            </tr>
+                            <tr>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                            </tr>
+                            <tr>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                            </tr>
+                            <tr>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                            </tr>
+                            <tr>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                            </tr>
+                            <tr>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                            </tr>
+                            <tr>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                            </tr>
+                            <tr>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                            </tr>
+                            <tr>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                                <td>тест</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                
             </div>
         </section>
         <section class="free__rooms__atoll">
@@ -2482,7 +2380,7 @@
                             <input type="text" placeholder="от" class="minArea">
                             <input type="text" placeholder="до" class="maxArea">
                         </div>
-                        <div class="filter-main filter-circle__rent-area"></div>
+                        <div class="filter-main filter-circle__rent-area filter-main__free"></div>
                     </div>
 
                     <div class="choice__rent-pay">
@@ -2491,12 +2389,13 @@
                             <input type="text" placeholder="от" class="minPay">
                             <input type="text" placeholder="до" class="maxPay">
                         </div>
-                        <div class="filter-main filter-circle__rent-pay"></div>
+                        <div class="filter-main filter-circle__rent-pay filter-main__free"></div>
 
                         <button id="sendFormButton" class="button__orange button__orange_filter_center">Найти</button>
                     </div>
                 </div>
-                <table class="table table__large" id="tableKvarc">
+                <div class="table__large__content">
+                    <table class="table table__large" id="tableKvarc">
                     <thead>
                         <tr class="table__header">
                             <th>№ Помещения</th>
@@ -2521,25 +2420,8 @@
                             <td>тест</td>
                             <td>тест</td>
                             <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
                         </tr>
                         <tr>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                        </tr>
-                        <tr>
-                            <td>тест</td>
-                            <td>тест</td>
                             <td>тест</td>
                             <td>тест</td>
                             <td>тест</td>
@@ -2560,25 +2442,8 @@
                             <td>тест</td>
                             <td>тест</td>
                             <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
                         </tr>
                         <tr>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                        </tr>
-                        <tr>
-                            <td>тест</td>
-                            <td>тест</td>
                             <td>тест</td>
                             <td>тест</td>
                             <td>тест</td>
@@ -2599,25 +2464,8 @@
                             <td>тест</td>
                             <td>тест</td>
                             <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
                         </tr>
                         <tr>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                        </tr>
-                        <tr>
-                            <td>тест</td>
-                            <td>тест</td>
                             <td>тест</td>
                             <td>тест</td>
                             <td>тест</td>
@@ -2638,25 +2486,8 @@
                             <td>тест</td>
                             <td>тест</td>
                             <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
                         </tr>
                         <tr>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                        </tr>
-                        <tr>
-                            <td>тест</td>
-                            <td>тест</td>
                             <td>тест</td>
                             <td>тест</td>
                             <td>тест</td>
@@ -2677,25 +2508,8 @@
                             <td>тест</td>
                             <td>тест</td>
                             <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
                         </tr>
                         <tr>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                        </tr>
-                        <tr>
-                            <td>тест</td>
-                            <td>тест</td>
                             <td>тест</td>
                             <td>тест</td>
                             <td>тест</td>
@@ -2716,25 +2530,8 @@
                             <td>тест</td>
                             <td>тест</td>
                             <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
                         </tr>
                         <tr>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                        </tr>
-                        <tr>
-                            <td>тест</td>
-                            <td>тест</td>
                             <td>тест</td>
                             <td>тест</td>
                             <td>тест</td>
@@ -2755,25 +2552,8 @@
                             <td>тест</td>
                             <td>тест</td>
                             <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
                         </tr>
                         <tr>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                        </tr>
-                        <tr>
-                            <td>тест</td>
-                            <td>тест</td>
                             <td>тест</td>
                             <td>тест</td>
                             <td>тест</td>
@@ -2794,25 +2574,8 @@
                             <td>тест</td>
                             <td>тест</td>
                             <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
                         </tr>
                         <tr>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                            <td>тест</td>
-                        </tr>
-                        <tr>
-                            <td>тест</td>
-                            <td>тест</td>
                             <td>тест</td>
                             <td>тест</td>
                             <td>тест</td>
@@ -2833,6 +2596,15 @@
                             <td>тест</td>
                             <td>тест</td>
                             <td>тест</td>
+                        </tr>
+                        <tr>
+                            <td>тест</td>
+                            <td>тест</td>
+                            <td>тест</td>
+                            <td>тест</td>
+                            <td>тест</td>
+                            <td>тест</td>
+                            <td>тест</td>
                             <td>тест</td>
                             <td>тест</td>
                         </tr>
@@ -2846,12 +2618,85 @@
                             <td>тест</td>
                             <td>тест</td>
                             <td>тест</td>
+                        </tr>
+                        <tr>
+                            <td>тест</td>
+                            <td>тест</td>
+                            <td>тест</td>
+                            <td>тест</td>
+                            <td>тест</td>
+                            <td>тест</td>
+                            <td>тест</td>
                             <td>тест</td>
                             <td>тест</td>
                         </tr>
                         <tr>
                             <td>тест</td>
                             <td>тест</td>
+                            <td>тест</td>
+                            <td>тест</td>
+                            <td>тест</td>
+                            <td>тест</td>
+                            <td>тест</td>
+                            <td>тест</td>
+                            <td>тест</td>
+                        </tr>
+                        <tr>
+                            <td>тест</td>
+                            <td>тест</td>
+                            <td>тест</td>
+                            <td>тест</td>
+                            <td>тест</td>
+                            <td>тест</td>
+                            <td>тест</td>
+                            <td>тест</td>
+                            <td>тест</td>
+                        </tr>
+                        <tr>
+                            <td>тест</td>
+                            <td>тест</td>
+                            <td>тест</td>
+                            <td>тест</td>
+                            <td>тест</td>
+                            <td>тест</td>
+                            <td>тест</td>
+                            <td>тест</td>
+                            <td>тест</td>
+                        </tr>
+                        <tr>
+                            <td>тест</td>
+                            <td>тест</td>
+                            <td>тест</td>
+                            <td>тест</td>
+                            <td>тест</td>
+                            <td>тест</td>
+                            <td>тест</td>
+                            <td>тест</td>
+                            <td>тест</td>
+                        </tr>
+                        <tr>
+                            <td>тест</td>
+                            <td>тест</td>
+                            <td>тест</td>
+                            <td>тест</td>
+                            <td>тест</td>
+                            <td>тест</td>
+                            <td>тест</td>
+                            <td>тест</td>
+                            <td>тест</td>
+                        </tr>
+                        <tr>
+                            <td>тест</td>
+                            <td>тест</td>
+                            <td>тест</td>
+                            <td>тест</td>
+                            <td>тест</td>
+                            <td>тест</td>
+                            <td>тест</td>
+                            <td>тест</td>
+                            <td>тест</td>
+                        </tr>
+                        <tr>
                             <td>тест</td>
                             <td>тест</td>
                             <td>тест</td>
@@ -2864,6 +2709,8 @@
                         </tr>
                     </tbody>
                 </table>
+                </div>
+                
             </div>
         </section>
     </section>
@@ -2924,23 +2771,36 @@
             <div class="divider__room"></div>
 
             <div class="room__slider">
-                    <div><img src="/img/bc/atoll/1.jpg" alt="slider"></div>
-                    <div><img src="/img/bc/atoll/2.jpg" alt="slider"></div>
-                    <div><img src="/img/bc/atoll/3.jpg" alt="slider"></div>
-                    <div><img src="/img/bc/atoll/4.jpg" alt="slider"></div>
-                    <div><img src="/img/bc/atoll/5.jpg" alt="slider"></div>
-                    <div><img src="/img/bc/atoll/6.jpg" alt="slider"></div>
-                <!-- <div><img src="img/stocks/rent/794/Kvarts_0.jpg" alt="slider"></div>
-                <div><img src="img/stocks/rent/794/6ekW8nRKcIY.jpg" alt="slider"></div>
-                <div><img src="img/stocks/rent/794/csDMLy6IHmM.jpg" alt="slider"></div>
-                <div><img src="img/stocks/rent/794/hdBXzVRIxo8.jpg" alt="slider"></div>
-                <div><img src="img/stocks/rent/794/IMG_20190211_100558.jpg" alt="slider"></div>
-                <div><img src="img/stocks/rent/794/JAM9jHUw65w.jpg" alt="slider"></div>
-                <div><img src="img/stocks/rent/794/lWalg59nFfY.jpg" alt="slider"></div>
-                <div><img src="img/stocks/rent/794/pXZn27HS6TE.jpg" alt="slider"></div>
-                <div><img src="img/stocks/rent/794/R2idZEpmJYA.jpg" alt="slider"></div>
-                <div><img src="img/stocks/rent/794/rLPS--UpDxU.jpg" alt="slider"></div>
-                <div><img src="img/stocks/rent/794/XOYCHW_9Zs0.jpg" alt="slider"></div> -->
+                <div><img src="img/offices/794/Kvarts_0.jpg" alt="slider"></div>
+                <div><img src="img/offices/794/6ekW8nRKcIY.jpg" alt="slider"></div>
+                <div><img src="img/offices/794/csDMLy6IHmM.jpg" alt="slider"></div>
+                <div><img src="img/offices/794/hdBXzVRIxo8.jpg" alt="slider"></div>
+                <div><img src="img/offices/794/IMG_20190211_100558.jpg" alt="slider"></div>
+                <div><img src="img/offices/794/JAM9jHUw65w.jpg" alt="slider"></div>
+                <div><img src="img/offices/794/lWalg59nFfY.jpg" alt="slider"></div>
+                <div><img src="img/offices/794/pXZn27HS6TE.jpg" alt="slider"></div>
+                <div><img src="img/offices/794/R2idZEpmJYA.jpg" alt="slider"></div>
+                <div><img src="img/offices/794/rLPS--UpDxU.jpg" alt="slider"></div>
+                <div><img src="img/offices/794/XOYCHW_9Zs0.jpg" alt="slider"></div>
+            </div>
+
+            <div class="divider__room"></div>
+
+            <div class="room__note">
+                <ul>
+                    <li>погрузка через окно (1,08х1,57)м</li>
+                    <li>ленточный транспортер</li>
+                </ul>
+            </div>
+
+            <div class="room__contacts">
+                <div class="room__questions">
+                    Остались вопросы? <br> Звоните!
+                </div>
+                <div class="room__numbers">
+                    <a href=":tel+78125918888">+7 (812) 591-88-88</a>
+                    <a href=":tel+79118494971">+7 (911) 849-49-71</a>
+                </div>
             </div>
         </div>
     </section>
