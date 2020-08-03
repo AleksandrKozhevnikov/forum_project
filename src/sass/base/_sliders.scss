@@ -75,7 +75,7 @@
     }
 }
 }
-.slick-prev, .slick-next, .slick-next_promo, .slick-prev_room, .slick-next_room {
+.slick-prev, .slick-next, .slick-next_promo,.slick-prev_promo, .slick-prev_room, .slick-next_room {
     position: absolute;
     transform: translate(12px,140px);
     z-index: 1;
@@ -98,7 +98,10 @@
 
 .slick-prev {
     &_room {
-		transform: translate(-440px,136px);
+    transform: translate(-440px,136px);
+    &_promo {
+      transform: translate(-440px,136px);
+    }
 	}
 }
 .slick-next {

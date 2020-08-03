@@ -1,11 +1,10 @@
 .header {
-  min-height: 104px;
+  min-height: 100px;
   background: url('/img/hdr.png') no-repeat;
   background-size: cover;
     &__wrapper {
         display: flex;
         justify-content: space-between;
-        height: 104px;
     }
     &__logo {
         img {
@@ -43,7 +42,6 @@
         display: flex;
         justify-content: space-between;
         margin: 0px;
-        padding-left: 0px;
         span {
             border-left: 1px solid $gray;
             height: 25px;

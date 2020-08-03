@@ -1,47 +1,53 @@
-@media (max-width: 420px) {
+@media ( min-width: 490px) and (max-width: 760px) {
     .header {
-        height: 150px;
+        min-height: 78px;
+        height: 78px;
         &__wrapper {
             display: flex;
-            flex-direction: column;
+            flex-direction: row;
+            justify-content: space-around;
         }
         &__logo {
             display: block;
             img {
                 display: block;
-                width: 73%;
-                margin-top: -8px;
-                margin-left: 50px;
+                width: 305px;
+                margin-top: -15px;
                 height: auto;
             }
         }
         &__phones {
-            display: inline-grid;
-            justify-content: center;
-            align-items: center;
-            padding-right: 0px;
-            padding-bottom: 11px;
+            margin-top: 32px;
+            width: auto;
+            align-items: flex-start;
+            justify-content: flex-start;
             a {
-                font-size: 20px;
-                padding-bottom: 6px;
+                font-size: 16px;
+                padding-bottom: 2px;
             }
             
         }
     }
     .menu {
+        
         &__wrapper {
+            margin: 0 auto;
+            padding: 0;
+            width: 431px;
+            a {
+                font-size: 12px;
+            }
             li {
-                display: none;
+                height: 40px;
+            }
+            p {
+                margin-top: 20px;
+                padding-right: 5px;
+                padding-left: 5px;
             }
             span {
-                display: none;
+                margin-top: 8px;
             }
-        }
-        &__link {
-            display: none;   
-        }
-        &__mobile {
-            display: block;
         }
     }
     .promo {
@@ -61,21 +67,19 @@
             line-height: 30px;
         }
         &__links {
-            justify-content: center;
-            width: 96%;
-            margin-left: 16px;
+            justify-content: space-evenly;
+            width: 100%;
             margin-top: 18px;
         }
         &__link {
             font-size: 13px;
-            margin-right: 20px;
         }
         &__image {
             width: 100%;
             text-align: center;
         }
         &__img {
-            width: 68%;
+            width: 78%;
             margin-bottom: 15px;
         }
     }
@@ -87,7 +91,7 @@
             display: none;
         }
         &__buildings {
-            width: 75%;   
+            width: 86%;   
         }
         &__wrapper {
             justify-content: center;
@@ -127,7 +131,7 @@
         }
         &__frame {
             margin-top: 20px;
-            width: 51%;
+            width: 62%;
         }
     }
     .footer {
@@ -142,7 +146,7 @@
         &__mobile__middle__wrapper {
             display: flex;
             flex-direction: row;
-            justify-content: center;
+            justify-content: space-around;
         }
         &__block__first {
             text-align: center;
@@ -171,6 +175,21 @@
             padding-bottom: 10px;
             display: flex;
         }
+        &__first__card {
+            width: 450px;
+        }
+        &__second__card {
+            width: 480px;
+        }
+        &__third__card {
+            width: 450px;
+        }
+        &__fourth__card {
+            width: 450px;
+        }
+        &__fifth__card {
+            width: 450px;
+        }
     }
     .rent {
         &__kvarc__wrapper {
@@ -187,7 +206,7 @@
             flex-direction: column;
         }
         &__choice {
-            width: 320px;
+            width: 480px;
             &__wrapper {
                 display: flex;
                 flex-direction: column;
@@ -200,7 +219,7 @@
         }
         &__map {
             margin-top: 30px;
-            width: 320px;
+            width: 480px;
             height: 240px;
             margin-left: 0;
         }
@@ -214,47 +233,47 @@
     }
     .kvarc {
         &__header {
-            width: 320px;
+            width: 480px;
             
         }
         &__slider {
-            width: 320px;
+            width: 480px;
             margin-left: 0;
             margin: 0 auto;
             margin-top: 30px;
             img {
-                height: 195px;
+                height: 258px;
             }
             
         }
     }
     .forum {
         &__header {
-            width: 320px;
+            width: 480px;
             margin-top: 15px;
         }
         &__slider {
-            width: 320px;
+            width: 480px;
             margin-left: 0;
             margin: 0 auto;
             margin-top: 30px;
             img {
-                height: 195px;
+                height: 258px;
             }
         }
     }
     .atoll {
         &__header {
-            width: 320px;
+            width: 480px;
             margin-top: 15px;
         }
         &__slider {
-            width: 320px;
+            width: 480px;
             margin-left: 0;
             margin: 0 auto;
             margin-top: 30px;
             img {
-                height: 195px;
+                height: 258px;
             }
         }
     }
@@ -262,7 +281,7 @@
         img {
             height: 50px;
         }
-        transform: translate(270px,-127px);
+        transform: translate(429px,-157px);
 
     }
     .slick-prev {
@@ -270,21 +289,22 @@
             height: 50px;
         }
         height: 50px;
-        transform: translate(0px,72px);
+        transform: translate(8px,103px);
     }
     .table {
-        width: 320px;
+        width: 480px;
         &__large {
-            width: 420px;
+            width: 450px;
             &__content {
                 display: block;
                 margin: 0 auto;
                 overflow: auto;
-                width: 320px;
+                width: 485px;
             }
         }
     }
     .buy {
+        min-height: 522px;
         &__content {
             display: none;
         }
@@ -292,12 +312,29 @@
             display: flex;
             flex-direction: column;
             align-items: center;
+            &__first {
+                width: 460px;
+            }
+            &__second {
+                height: 107px;
+                width: 460px;
+            }
+            &__third {
+                width: 460px;
+            }
+            &__fourth {
+                height: 155px;
+                width: 460px;
+            }
         }
     } 
     .sale {
         &__content {
             display: flex;
             flex-direction: column;
+            align-items: center;
+        }
+        &__block__left {
             align-items: center;
         }
         &__block__right {
@@ -308,7 +345,7 @@
     }
     .left {
         &__first_card {
-            width: 310px;
+            width: 450px;
             height: 57px;
             &__header {
                 font-size: 27px;
@@ -326,65 +363,65 @@
             }
         }
         &__second_card {
-            width: 329px;
+            width: 460px;
             height: 140px;
             &__text {
                 font-size: 24px;
             }
         }
         &__third_card {
-            width: 320px;
+            width: 450px;
             height: 140px;
             &__header {
-                font-size: 18px;
+                font-size: 20px;
             }
             &__adress {
-                font-size: 14px;
+                font-size: 16px;
             }
             &__descr {
-                padding-top: 12px;
-                font-size: 12px;
+                padding-top: 30px;
+                font-size: 14px;
             }
         }
         &__fourth_card {
-            width: 320px;
+            width: 450px;
             height: 140px;
             &__header {
-                font-size: 18px;
+                font-size: 20px;
             }
             &__adress {
-                font-size: 14px;
+                font-size: 16px;
             }
             &__descr {
                 bottom: 4px;
-                font-size: 12px;
+                font-size: 14px;
             }
         }
         &__fifth_card {
-            width: 320px;
+            width: 450px;
             height: 140px;
             &__header {
-                font-size: 18px;
+                font-size: 20px;
             }
             &__adress {
-                font-size: 14px;
+                font-size: 16px;
             }
             &__descr {
-                padding-top: 31px;
-                font-size: 12px;
+                padding-top: 46px;
+                font-size: 14px;
             }
         }
         &__six_card {
-            width: 320px;
+            width: 450px;
             height: 140px;
             &__header {
-                font-size: 18px;
+                font-size: 20px;
             }
             &__adress {
-                font-size: 14px;
+                font-size: 16px;
             }
             &__descr {
-                font-size: 12px;
+                font-size: 14px;
                 bottom: 3px;
                 line-height: 15px;
             }
@@ -395,18 +432,18 @@
             margin-top: 5px;
             display: flex;
             flex-direction: row;
-            width: 320px;
+            width: 450px;
             height: 140px;
             margin-left: 0;
             &__header {
-                font-size: 14px;
+                font-size: 18px;
                 line-height: 15px;
             }
             &__adress {
-                font-size: 14px;
+                font-size: 16px;
             }
             &__descr {
-                font-size: 12px;
+                font-size: 14px;
                 display: flex;
                 flex-direction: row;
                 line-height: 13px;
@@ -421,20 +458,20 @@
             margin-top: 10px;
             display: flex;
             flex-direction: row;
-            width: 320px;
+            width: 450px;
             height: 140px;
             margin-left: 0;
             &__header {
-                font-size: 18px;
+                font-size: 20px;
             }
             &__adress {
-                font-size: 14px;
+                font-size: 16px;
             }
             &__descr {
-                font-size: 12px;
+                font-size: 14px;
                 display: flex;
                 flex-direction: row;
-                padding-top: 10px;
+                padding-top: 38px;
                 line-height: 14px;
             }
             &__image {
@@ -449,17 +486,17 @@
         &__third_card {
             display: flex;
             flex-direction: row;
-            width: 320px;
+            width: 450px;
             height: 140px;
             margin-left: 0;
             &__header {
-                font-size: 18px;
+                font-size: 20px;
             }
             &__adress {
-                font-size: 14px;
+                font-size: 16px;
             }
             &__descr {
-                font-size: 12px;
+                font-size: 14px;
                 display: flex;
                 flex-direction: row;
                 bottom: 5px;
@@ -472,20 +509,20 @@
         &__fourth_card {
             display: flex;
             flex-direction: row;
-            width: 320px;
+            width: 450px;
             height: 140px;
             margin-left: 0;
             &__header {
-                font-size: 18px;
+                font-size: 20px;
             }
             &__adress {
-                font-size: 14px;
+                font-size: 16px;
             }
             &__descr {
-                font-size: 12px;
+                font-size: 14px;
                 display: flex;
                 flex-direction: row;
-                padding-top: 24px;
+                padding-top: 42px;
                 line-height: 15px;
             }
             &__image {
@@ -496,17 +533,17 @@
         &__fifth_card {
             display: flex;
             flex-direction: row;
-            width: 320px;
+            width: 450px;
             height: 140px;
             margin-left: 0;
             &__header {
-                font-size: 18px;
+                font-size: 20px;
             }
             &__adress {
-                font-size: 14px;
+                font-size: 16px;
             }
             &__descr {
-                font-size: 12px;
+                font-size: 14px;
                 display: flex;
                 flex-direction: row;
                 bottom: 4px;
@@ -545,12 +582,12 @@
             flex-direction: column;
         }
         &__page__slider {
-            width: 320px;
+            width: 470px;
             margin-left: 0;
             margin: 0 auto;
             margin-top: 8px;
             img {
-                height: 195px;
+                height: 235px;
             }
         }
         &__stock {
@@ -561,7 +598,7 @@
             margin: 0 auto;
             }
             &__content {
-                width: 280px;
+                width: 460px;
             }
             &__title {
                 padding-top: 10px;
@@ -588,12 +625,12 @@
         }
         &__about__block {
             padding-top: 20px;
-            width: 80%;
+            width: 86%;
             display: block;
             margin: 0 auto;
         }
         &__travel__block {
-            width: 80%;
+            width: 86%;
             display: block;
             margin: 0 auto;
         }
@@ -610,12 +647,12 @@
             flex-direction: column;
         }
         &__page__slider {
-            width: 320px;
+            width: 470px;
             margin-left: 0;
             margin: 0 auto;
             margin-top: 8px;
             img {
-                height: 195px;
+                height: 235px;
             }
         }
         &__stock {
@@ -626,7 +663,7 @@
             margin: 0 auto;
             }
             &__content {
-                width: 280px;
+                width: 460px;
             }
             &__title {
                 padding-top: 10px;
@@ -652,12 +689,12 @@
         }
         &__about__block {
             padding-top: 20px;
-            width: 80%;
+            width: 86%;
             display: block;
             margin: 0 auto;
         }
         &__travel__block {
-            width: 80%;
+            width: 86%;
             display: block;
             margin: 0 auto;
         }
@@ -674,12 +711,12 @@
             flex-direction: column;
         }
         &__page__slider {
-            width: 320px;
+            width: 470px;
             margin-left: 0;
             margin: 0 auto;
             margin-top: 8px;
             img {
-                height: 195px;
+                height: 235px;
             }
         }
         &__stock {
@@ -690,7 +727,7 @@
             margin: 0 auto;
             }
             &__content {
-                width: 280px;
+                width: 460px;
             }
             &__title {
                 padding-top: 10px;
@@ -717,12 +754,12 @@
         }
         &__about__block {
             padding-top: 20px;
-            width: 80%;
+            width: 86%;
             display: block;
             margin: 0 auto;
         }
         &__travel__block {
-            width: 80%;
+            width: 86%;
             display: block;
             margin: 0 auto;
         }
@@ -839,14 +876,13 @@
         img {
             height: 50px;
         }
-        transform: translate(270px,-127px);
+        transform: translate(415px,-145px);
     }
-    .slick-prev {
+    .slick-prev_promo {
         img {
             height: 50px;
         }
-        height: 50px;
-        transform: translate(0px,72px);
+        transform: translate(12px,90px);
     }
     .travel {
         &__name {
@@ -861,8 +897,8 @@
             }
         }
         &__name {
-            font-size: 15px;
-            line-height: 12px;
+            font-size: 18px;
+            line-height: 17px;
             width: 100%;
         }
         &__map {
@@ -870,13 +906,13 @@
                 display: block;
                 margin: 0 auto;
                 text-align: center;
-                width: 115px;
+                width: 161px;
                 padding-bottom: 20px;
             }
         }
             
         &__map__active {
-            width: 285px;
+            width: 440px;
             margin: 0 auto;
         }
     }
@@ -884,16 +920,16 @@
         &__forum {
             margin-bottom: 30px;
             img {
-                width: 333px;
+                width: 467px;
             }
             &__active {
-                width: 333px;
+                width: 467px;
                 margin: 0 auto;
             }
         }
         &__atoll {
             img {
-                width: 333px;
+                width: 467px;
             }
         }
     }
@@ -929,7 +965,7 @@
     }
     .room {
         &__slider {
-            width: 320px;
+            width: 440px;
             margin-bottom: 10px;
             img {
                 width: inherit;
@@ -964,12 +1000,12 @@
     }
     .slick-next {
         &_room {
-            transform: translate(115px,-213px);
+            transform: translate(170px,-213px);
         }
     }
     .slick-prev {
         &_room {
-            transform: translate(-152px,136px);
+            transform: translate(-210px,136px);
         }
     }
 }
