@@ -1,0 +1,308 @@
+@media ( min-width: 720px) and (max-width: 980px) {
+    .header {
+        &__logo {
+            img {
+                height: 110px;
+                margin-left: 41px;
+            }
+            
+        }
+        &__phones {
+            padding-right: 60px;
+            a {
+                font-size: 19px;
+            }
+            
+        }
+    }
+    .menu {
+        &__wrapper {
+            width: 87%;
+            margin: 0 auto;
+            li {
+                font-size: 18px;
+                a {
+                    line-height: 12px;
+                }
+            }
+          
+        }
+    }
+    .promo {
+        min-height: 345px;
+        &__title {
+            font-size: 30px;
+            padding-top: 92px;
+            line-height: 30px;
+        }
+        &__titles {
+            height: 345px;
+            width: 392px;
+            margin-left: 56px;
+            background-size: 85%;
+        }
+        &__link {
+            font-size: 13px;
+        }
+        &__links {
+            width: 75%;
+        }
+        &__image {
+            img {
+                width: 80%;
+            }
+        }
+    }
+    .pickup {
+        min-height: 362px;
+        &__map {
+            display: none;
+        }
+        &__buildings {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            width: 100%;
+            
+            &__card {
+                width: 42%;
+                margin-right: 15px;
+            }
+        }
+    }
+    .partners {
+        &__wrapper {
+            justify-content: center;
+            margin-left: 25px;
+        }
+        &__frame {
+            margin-right: 25px;
+            width: 22%;
+        }
+    }
+    .footer {
+        &__wrapper {
+            justify-content: space-evenly;
+        }
+    }
+    .rent {
+        &__choice {
+            width: 322px;
+            &__wrapper {
+                justify-content: center;
+            }
+        }
+        &__map {
+            width: 438px;
+        }
+        &__wrapper {
+            justify-content: center;
+        }
+        &__kvarc__wrapper {
+            width: 322px;
+        }
+        &__forum__wrapper {
+            width: 322px;
+        }
+        &__atoll__wrapper {
+            width: 322px;
+        }
+        &__another-room {
+            margin-left: 10px;
+        }
+        &__terms {
+            margin-left: 60px;
+        }
+    }
+        
+    .kvarc {
+        &__page__slider {
+            width: 437px;
+        }
+        &__slider {
+            width: 437px;
+        }
+        &__header {
+            width: 322px;
+        }
+    }
+    .forum {
+        &__page__slider {
+            width: 437px;
+        }
+        &__slider {
+            width: 437px;
+        }
+        &__header {
+            width: 322px;
+        }
+    }
+    .atoll {
+        &__page__slider {
+            width: 437px;
+        }
+        &__slider {
+            width: 437px;
+        }
+        &__header {
+            width: 322px;
+        }
+    }
+    .table {
+        width: 322px;
+    }
+    .slick-prev {
+        transform: translate(10px,136px);
+    }
+    .slick-next {
+        transform: translate(385px,-213px);
+    }
+    .buy {
+        &__content {
+            justify-content: center;
+        }
+        &__left__block {
+            display: none;
+        }
+    }
+    .sale {
+        &__content {
+            margin-left: 60px;
+        }
+    }
+    .floors {
+        &__building {
+            &__kvarc {
+                img {
+                    width: 570px;
+                }
+            }
+        }
+    }
+    .travel {
+        &__map {
+            &__active {
+                width: 874px;
+            }
+        }
+    }
+    .left {
+        &__first_card {
+            width: 360px;
+            height: 185px;
+            &__header {
+                font-size: 27px;
+                line-height: 25px;
+                margin-top: 0;
+                margin-left: 8px;
+            }
+            &__contacts {
+                line-height: 19px;
+                font: status-bar;
+                font-weight: 600;
+                font-size: 14px;
+                text-align: right;
+                padding-right: 10px;
+            }
+        }
+        &__second_card {
+            width: 370px;
+            height: 185px;
+            &__text {
+                font-size: 24px;
+            }
+        }
+        &__third_card {
+            width: 360px;
+            height: 185px;
+            &__header {
+                font-size: 20px;
+            }
+            &__adress {
+                font-size: 16px;
+            }
+            &__descr {
+                padding-top: 50px;
+                font-size: 14px;
+            }
+        }
+        &__fourth_card {
+            width: 360px;
+            height: 185px;
+            &__header {
+                font-size: 20px;
+            }
+            &__adress {
+                font-size: 16px;
+            }
+            &__descr {
+                bottom: 4px;
+                font-size: 14px;
+            }
+        }
+        &__fifth_card {
+            width: 360px;
+            height: 185px;
+            &__header {
+                font-size: 20px;
+            }
+            &__adress {
+                font-size: 16px;
+            }
+            &__descr {
+                padding-top: 68px;
+                font-size: 14px;
+            }
+        }
+        &__six_card {
+            width: 360px;
+            height: 186px;
+            &__header {
+                font-size: 20px;
+            }
+            &__adress {
+                font-size: 16px;
+            }
+            &__descr {
+                font-size: 14px;
+                bottom: 3px;
+                line-height: 15px;
+            }
+        }
+    }
+    .right {
+        &__first_card {
+            width: 170px;
+            &__descr {
+                font-size: 14px;
+                line-height: 16px;
+            }
+        }
+        &__second_card {
+            width: 170px;
+            &__descr {
+                padding-top: 66px;
+                font-size: 17px;
+            }
+        }
+        &__third_card {
+            width: 170px;
+        }
+        &__fourth_card {
+            &__descr {
+                padding-top: 88px;
+                font-size: 15px;
+                line-height: 19px;
+            }
+            width: 170px;
+        }   
+        &__fifth_card {
+            width: 360px;
+            height: 185px;
+            &__descr {
+                bottom: 4px;
+                font-size: 16px;
+            }
+        }
+    }
+}
