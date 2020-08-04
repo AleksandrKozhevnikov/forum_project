@@ -344,7 +344,39 @@
             height: 507px;
         }
     }
+    &__building__kvarc{
+        transition: 0.3s all;
+        position: relative;
+        img {
+            width: 705px;
+            height: 336px;
+        }
+        
+    }
+    &__building__kvarc__active {
+        width: 763px;
+        height: 350px;
+        position: absolute;
+        top: -22px;
+        left: -57px;
+        transform: scaleX(.86) scaleY(.87);
+        
+        polygon {
+            opacity: 0;
+        }
+        :hover {
+            opacity: 1;
+        }
+    }
 }
+.floor__choice {
+    transition: 0.3s all;
+    &__active {
+        background: #6e8cd2;
+        color: #FFFFFF;
+    }
+}
+
 
 .choice {
     &__floor__forum {

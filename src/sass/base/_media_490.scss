@@ -1,9 +1,8 @@
 
-
-
-@media (max-width: 490px) {
+@media (min-width: 0px) and (max-width: 490px) {
     .header {
         height: 150px;
+        min-height: 150px;
         &__wrapper {
             display: flex;
             flex-direction: column;

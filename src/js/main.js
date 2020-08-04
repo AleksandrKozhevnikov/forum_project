@@ -118,6 +118,7 @@ $(document).ready(function(){
 
 // END all sliders
 
+// sliders circle
 $(".filter-circle__rent-pay").slider({
 	min: 8250,
 	max: 125860,
@@ -203,4 +204,38 @@ $("input.maxArea").change(function(){
 	});
 
 
+// END Sliders circle
 
+// Active floors
+
+if (document.querySelector('.choice__floor__kvarc')) {
+    (function () {
+      var skladList = document.querySelectorAll('.choice__floor__kvarc'),
+          skladFloor = document.querySelectorAll('.floor__choice');
+
+      var _loop2 = function _loop2(i) {
+        $(skladList[i]).hover(function () {
+          $(skladFloor[i]).css('opacity', '1');
+        }, function () {
+          $(skladFloor[i]).css('opacity', '0');
+        });
+        $(skladFloor[i]).hover(function () {
+          $(skladFloor[i]).css('opacity', '1');
+        }, function () {
+          $(skladFloor[i]).css('opacity', '0');
+        });
+              $(skladFloor[i]).hover(function () {
+                  skladList[i].classList.add('floor__choice__active');
+              }, function () {
+                  skladList[i].classList.remove('floor__choice__active');
+              });
+      };
+
+      for (var i = 0; i < skladList.length; i++) {
+        _loop2(i);
+      }
+    })();
+  }
+
+
+// END active floors

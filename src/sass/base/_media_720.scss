@@ -1,7 +1,7 @@
 @media ( min-width: 490px) and (max-width: 760px) {
     .header {
-        min-height: 78px;
         height: 78px;
+        min-height: 78px;
         &__wrapper {
             display: flex;
             flex-direction: row;
@@ -33,9 +33,9 @@
         &__wrapper {
             margin: 0 auto;
             padding: 0;
-            width: 431px;
+            width: 480px;
             a {
-                font-size: 12px;
+                font-size: 14px;
             }
             li {
                 height: 40px;
@@ -177,18 +177,22 @@
         }
         &__first__card {
             width: 450px;
+            height: 35px;
         }
         &__second__card {
             width: 480px;
         }
         &__third__card {
             width: 450px;
+            height: 35px;
         }
         &__fourth__card {
             width: 450px;
+            height: 140px;
         }
         &__fifth__card {
             width: 450px;
+            height: 35px;
         }
     }
     .rent {
