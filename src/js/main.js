@@ -206,7 +206,8 @@ $("input.maxArea").change(function(){
 
 // END Sliders circle
 
-// Active floors
+
+// Active floors kvarc
 
 if (document.querySelector('.choice__floor__kvarc')) {
     (function () {
@@ -238,4 +239,106 @@ if (document.querySelector('.choice__floor__kvarc')) {
   }
 
 
-// END active floors
+// END active floors kvarc
+
+// Active floors office forum
+
+if (document.querySelector('.choice__floor__forum')) {
+    (function () {
+      var skladList = document.querySelectorAll('.choice__floor__forum'),
+          skladFloor = document.querySelectorAll('.floor__choice__forum');
+
+      var _loop2 = function _loop2(i) {
+        $(skladList[i]).hover(function () {
+          $(skladFloor[i]).css('opacity', '1');
+        }, function () {
+          $(skladFloor[i]).css('opacity', '0');
+        });
+        $(skladFloor[i]).hover(function () {
+          $(skladFloor[i]).css('opacity', '1');
+        }, function () {
+          $(skladFloor[i]).css('opacity', '0');
+        });
+              $(skladFloor[i]).hover(function () {
+                  skladList[i].classList.add('floor__choice__active');
+              }, function () {
+                  skladList[i].classList.remove('floor__choice__active');
+              });
+      };
+
+      for (var i = 0; i < skladList.length; i++) {
+        _loop2(i);
+      }
+    })();
+  }
+
+
+// END Active floors office forum
+
+// Active floors warehouse forum
+
+if (document.querySelector('.choice__warehouse__forum')) {
+    (function () {
+      var skladList = document.querySelectorAll('.choice__warehouse__forum'),
+          skladFloor = document.querySelectorAll('.warehouse__choice');
+
+      var _loop2 = function _loop2(i) {
+        $(skladList[i]).hover(function () {
+          $(skladFloor[i]).css('opacity', '1');
+        }, function () {
+          $(skladFloor[i]).css('opacity', '0');
+        });
+        $(skladFloor[i]).hover(function () {
+          $(skladFloor[i]).css('opacity', '1');
+        }, function () {
+          $(skladFloor[i]).css('opacity', '0');
+        });
+              $(skladFloor[i]).hover(function () {
+                  skladList[i].classList.add('floor__choice__active');
+              }, function () {
+                  skladList[i].classList.remove('floor__choice__active');
+              });
+      };
+
+      for (var i = 0; i < skladList.length; i++) {
+        _loop2(i);
+      }
+    })();
+  }
+
+  
+
+// END Active floors warehouse forum
+
+// Active floors atoll
+
+if (document.querySelector('.choice__floor__atoll')) {
+    (function () {
+      var skladList = document.querySelectorAll('.choice__floor__atoll'),
+          skladFloor = document.querySelectorAll('.floor__choice__atoll');
+
+      var _loop2 = function _loop2(i) {
+        $(skladList[i]).hover(function () {
+          $(skladFloor[i]).css('opacity', '1');
+        }, function () {
+          $(skladFloor[i]).css('opacity', '0');
+        });
+        $(skladFloor[i]).hover(function () {
+          $(skladFloor[i]).css('opacity', '1');
+        }, function () {
+          $(skladFloor[i]).css('opacity', '0');
+        });
+              $(skladFloor[i]).hover(function () {
+                  skladList[i].classList.add('floor__choice__active');
+              }, function () {
+                  skladList[i].classList.remove('floor__choice__active');
+              });
+      };
+
+      for (var i = 0; i < skladList.length; i++) {
+        _loop2(i);
+      }
+    })();
+  }
+
+// END Active floors atoll

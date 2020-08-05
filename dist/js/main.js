@@ -86,7 +86,7 @@ $(document).ready(function(){
         autoplay: true,
         autoplaySpeed: 5000,
         speed: 1500,
-        prevArrow: '<button type="button" class="slick-prev"><img src="img/icons/arrov-left.png"></button>',
+        prevArrow: '<button type="button" class="slick-prev_promo"><img src="img/icons/arrov-left.png"></button>',
         nextArrow: '<button type="button" class="slick-next_promo"><img src="img/icons/arrov-right.png"></button>'
     });
     $('.forum__page__slider').slick({
@@ -94,7 +94,7 @@ $(document).ready(function(){
         autoplay: true,
         autoplaySpeed: 5000,
         speed: 1500,
-        prevArrow: '<button type="button" class="slick-prev"><img src="img/icons/arrov-left.png"></button>',
+        prevArrow: '<button type="button" class="slick-prev_promo"><img src="img/icons/arrov-left.png"></button>',
         nextArrow: '<button type="button" class="slick-next_promo"><img src="img/icons/arrov-right.png"></button>'
     });
     $('.atoll__page__slider').slick({
@@ -102,7 +102,7 @@ $(document).ready(function(){
         autoplay: true,
         autoplaySpeed: 5000,
         speed: 1500,
-        prevArrow: '<button type="button" class="slick-prev"><img src="img/icons/arrov-left.png"></button>',
+        prevArrow: '<button type="button" class="slick-prev_promo"><img src="img/icons/arrov-left.png"></button>',
         nextArrow: '<button type="button" class="slick-next_promo"><img src="img/icons/arrov-right.png"></button>'
     });
     $('.room__slider').slick({
@@ -118,6 +118,7 @@ $(document).ready(function(){
 
 // END all sliders
 
+// sliders circle
 $(".filter-circle__rent-pay").slider({
 	min: 8250,
 	max: 125860,
@@ -203,4 +204,38 @@ $("input.maxArea").change(function(){
 	});
 
 
+// END Sliders circle
 
+// Active floors
+
+if (document.querySelector('.choice__floor__kvarc')) {
+    (function () {
+      var skladList = document.querySelectorAll('.choice__floor__kvarc'),
+          skladFloor = document.querySelectorAll('.floor__choice');
+
+      var _loop2 = function _loop2(i) {
+        $(skladList[i]).hover(function () {
+          $(skladFloor[i]).css('opacity', '1');
+        }, function () {
+          $(skladFloor[i]).css('opacity', '0');
+        });
+        $(skladFloor[i]).hover(function () {
+          $(skladFloor[i]).css('opacity', '1');
+        }, function () {
+          $(skladFloor[i]).css('opacity', '0');
+        });
+              $(skladFloor[i]).hover(function () {
+                  skladList[i].classList.add('floor__choice__active');
+              }, function () {
+                  skladList[i].classList.remove('floor__choice__active');
+              });
+      };
+
+      for (var i = 0; i < skladList.length; i++) {
+        _loop2(i);
+      }
+    })();
+  }
+
+
+// END active floors

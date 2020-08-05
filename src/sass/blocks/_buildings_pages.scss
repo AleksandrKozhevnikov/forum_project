@@ -329,6 +329,21 @@
             margin: 0;
             list-style-type: none;
         }
+        &__warehouse {
+            margin-top: 67px;
+            a {
+                :hover {
+                    background: #6e8cd2;
+                    color: #FFFFFF;
+                }
+                text-decoration: none;
+            }
+            ul {
+                padding: 0;
+                margin: 0;
+                list-style-type: none;
+            }
+        }
         
     }
     &__building {
@@ -351,7 +366,14 @@
             width: 705px;
             height: 336px;
         }
-        
+    }
+    &__building__forum {
+        margin-top: 40px;
+        position: relative;
+        img {
+            width: 736px;
+            height: 529px;
+        }
     }
     &__building__kvarc__active {
         width: 763px;
@@ -368,8 +390,45 @@
             opacity: 1;
         }
     }
+    &__building__forum__active {
+        width: 800px;
+        height: 600px;
+        position: absolute;
+        top: 5px;
+        left: -50px;
+        transform: scaleX(.86) scaleY(.87);
+        
+        polygon {
+            opacity: 0;
+        }
+        :hover {
+            opacity: 1;
+        }
+    }
+    &__building__atoll__active {
+        width: 800px;
+        height: 600px;
+        position: absolute;
+        top: -35px;
+        left: -53px;
+        transform: scaleX(.87) scaleY(.87);
+        polygon {
+            opacity: 0;
+        }
+        :hover {
+            transition: 0.3s all;
+            opacity: 1;
+        }
+    }
 }
 .floor__choice {
+    transition: 0.3s all;
+    &__active {
+        background: #6e8cd2;
+        color: #FFFFFF;
+    }
+}
+.warehouse__choice {
     transition: 0.3s all;
     &__active {
         background: #6e8cd2;
@@ -380,6 +439,20 @@
 
 .choice {
     &__floor__forum {
+        font-family: liberation-reg;
+        border: 1px solid #133d9b;
+        padding: 5px;
+        width: 88px;
+        height: 16px;
+        text-align: center;
+        margin: 10px 0;
+        margin-right: 45px;
+        box-shadow: 2px 2px 5px -2px #1749ba;
+        cursor: pointer;
+        transition: 0.3s;
+        color: #4C4C4C;
+    }
+    &__warehouse__forum {
         font-family: liberation-reg;
         border: 1px solid #133d9b;
         padding: 5px;
@@ -567,6 +640,7 @@
     }
 }
 .for_atoll {
+    position: relative;
     img {
         height: 461px;
     }
